@@ -1,0 +1,121 @@
+(footprint "3310_key"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f16812c3-fd16-40e6-9e0f-84df264117eb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "3310_key"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "389fa19b-bd73-4d32-9bde-da6504e12e12")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3693c395-7f3c-452a-9151-48d256b0db9a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "347824bb-f1a5-4e19-96e2-af9e14e4118d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13aa394c-8d68-43dd-8730-2d31716ffcb7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 2.5 2.5)
+		(layers "F.Cu" "F.Mask")
+		(uuid "1e66b5bc-89f1-489e-9f39-9dc6720609f3")
+	)
+	(pad "2" smd custom
+		(at 2.375 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(arc
+						(start -0.625 0)
+						(mid -2.375 1.75)
+						(end -4.125 0)
+					)
+					(arc
+						(start -5.375 0)
+						(mid -2.375 3)
+						(end 0.625 0)
+					)
+				)
+				(width 0)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(arc
+						(start 0.625 0)
+						(mid -2.375 -3)
+						(end -5.375 0)
+					)
+					(arc
+						(start -4.125 0)
+						(mid -2.375 -1.75)
+						(end -0.625 0)
+					)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "983aaf0d-f938-4b96-b3c1-fb79bd750e58")
+	)
+)

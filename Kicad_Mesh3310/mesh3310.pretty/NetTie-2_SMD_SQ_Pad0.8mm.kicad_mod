@@ -1,0 +1,85 @@
+(footprint "NetTie-2_SMD_SQ_Pad0.8mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Net tie, 2 pin, 0.5mm square SMD pads")
+	(tags "net tie")
+	(property "Reference" "NT1"
+		(at 0 -1.2 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1ce0122b-62c0-465a-8cdc-f43e73b7d9cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "NetTie_2 (Feed to ground)"
+		(at 0 1.2 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "80eab58e-3481-4dc1-82c6-2de63cb792ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/C127620.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c600491-83aa-4f6b-ba34-dc5527a57667")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Net tie, 2 pins"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "99cebf6a-9b03-4005-b805-940bb0655824")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(net_tie_pad_groups "1, 2")
+	(fp_poly
+		(pts
+			(xy -0.75 -0.4) (xy 0.75 -0.4) (xy 0.75 0.4) (xy -0.75 0.4)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "4624d1bc-a762-46c1-abce-d787e825628a")
+	)
+	(pad "1" smd circle
+		(at -0.499999 0)
+		(size 0.5 0.5)
+		(layers "F.Cu")
+		(uuid "7fbd2b18-1758-45e1-b79f-383eb728adf2")
+	)
+	(pad "2" smd circle
+		(at 0.499999 0)
+		(size 0.5 0.5)
+		(layers "F.Cu")
+		(uuid "8a70f5a4-7a5b-4aef-927f-3658cd0b2dd3")
+	)
+	(embedded_fonts no)
+)

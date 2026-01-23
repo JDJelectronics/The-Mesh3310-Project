@@ -1,0 +1,120 @@
+(footprint "3310_speaker"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "07f65b0d-b4f5-4496-9bd3-a4f73b8c26e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "3310_speaker"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a42e5729-a54b-4e07-89ab-87f6f8a77036")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c8eb1cc9-c0a1-4b83-b2b5-7c7878d42bd3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b7ec920-f48b-46ee-8f8e-74cbdcb3d381")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f9691b52-1798-4f0a-a49a-8c427b55ca54")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 2 2)
+		(layers "F.Cu" "F.Mask")
+		(uuid "6dab572f-f4cc-4849-8044-066f15ddfda1")
+	)
+	(pad "2" smd custom
+		(at 2 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(arc
+						(start -0.75 0)
+						(mid -2 -1.25)
+						(end -3.25 0)
+					)
+					(arc
+						(start -4.6 0)
+						(mid -2 -2.6)
+						(end 0.6 0)
+					)
+				)
+				(width 0)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(arc
+						(start -3.25 0)
+						(mid -2 1.25)
+						(end -0.75 0)
+					)
+					(arc
+						(start 0.6 0)
+						(mid -2 2.6)
+						(end -4.6 0)
+					)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "4f3b4f26-db0b-4eb4-88b2-700d49b180d9")
+	)
+)
