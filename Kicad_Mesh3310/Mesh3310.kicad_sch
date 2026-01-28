@@ -4035,7 +4035,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Parts:2mm_mounting_hole_sig"
+		(property "Footprint" "mesh3310_footprints:2mm_mounting_hole_sig"
 			(at 107.95 175.26 0)
 			(effects
 				(font
@@ -4102,7 +4102,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Parts:2mm_mounting_hole_sig"
+		(property "Footprint" "mesh3310_footprints:2mm_mounting_hole_sig"
 			(at 100.33 175.26 0)
 			(effects
 				(font
@@ -4482,7 +4482,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Parts:2mm_mounting_hole_sig"
+		(property "Footprint" "mesh3310_footprints:2mm_mounting_hole_sig"
 			(at 146.05 175.26 0)
 			(effects
 				(font
@@ -4681,7 +4681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Parts:2mm_mounting_hole_sig"
+		(property "Footprint" "mesh3310_footprints:2mm_mounting_hole_sig"
 			(at 115.57 175.26 0)
 			(effects
 				(font
@@ -4943,7 +4943,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Parts:2mm_mounting_hole_sig"
+		(property "Footprint" "mesh3310_footprints:2mm_mounting_hole_sig"
 			(at 130.81 175.26 0)
 			(effects
 				(font
@@ -5010,7 +5010,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Parts:2mm_mounting_hole_sig"
+		(property "Footprint" "mesh3310_footprints:2mm_mounting_hole_sig"
 			(at 138.43 175.26 0)
 			(effects
 				(font
@@ -5339,7 +5339,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Parts:2mm_mounting_hole_sig"
+		(property "Footprint" "mesh3310_footprints:2mm_mounting_hole_sig"
 			(at 123.19 175.26 0)
 			(effects
 				(font
@@ -5667,7 +5667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mesh3310:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+		(property "Footprint" "mesh3310_footprints:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 			(at 256.54 92.71 0)
 			(effects
 				(font
@@ -5986,7 +5986,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 109.22 33.02 0)
 			(effects
 				(font

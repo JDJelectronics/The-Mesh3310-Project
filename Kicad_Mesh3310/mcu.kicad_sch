@@ -7236,7 +7236,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lcsc:SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL"
+		(property "Footprint" "mesh3310_footprints:SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL"
 			(at 128.27 194.31 0)
 			(effects
 				(font
@@ -8262,7 +8262,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lcsc:IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R"
+		(property "Footprint" "mesh3310_footprints:IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R"
 			(at 80.01 139.7 0)
 			(effects
 				(font
@@ -9682,7 +9682,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "mesh3310:CRYSTAL-SMD_4P-L2.0-W1.6-BL"
+		(property "Footprint" "mesh3310_footprints:CRYSTAL-SMD_4P-L2.0-W1.6-BL"
 			(at 30.48 27.94 0)
 			(effects
 				(font
@@ -10198,7 +10198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mesh3310:XCVR_NRF52840-QIAA-R"
+		(property "Footprint" "mesh3310_footprints:XCVR_NRF52840-QIAA-R"
 			(at 144.78 91.44 0)
 			(effects
 				(font

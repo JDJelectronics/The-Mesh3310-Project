@@ -2393,7 +2393,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mesh3310:Texas_SWRA416_868MHz_915MHz_right"
+		(property "Footprint" "mesh3310_footprints:Texas_SWRA416_868MHz_915MHz_right_v2"
 			(at 167.64 71.12 0)
 			(effects
 				(font

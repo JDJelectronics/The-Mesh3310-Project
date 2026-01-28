@@ -4575,7 +4575,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Parts:ML414H"
+		(property "Footprint" "mesh3310_footprints:ML414H"
 			(at 256.54 87.376 90)
 			(effects
 				(font
@@ -5731,7 +5731,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Parts:3310_batt"
+		(property "Footprint" "mesh3310_footprints:3310_batt"
 			(at 130.81 90.17 0)
 			(effects
 				(font
@@ -6244,7 +6244,7 @@
 		(dnp no)
 		(uuid "b397b95f-0f66-4b18-a7e7-1d058bbdb6aa")
 		(property "Reference" "C27"
-			(at 109.728 107.95 90)
+			(at 109.728 108.712 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6655,7 +6655,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:SIDE PUSH 2.2NF 4.7x3.2x1.65mm"
+		(property "Footprint" "mesh3310_footprints:SIDE PUSH 2.2NF 4.7x3.2x1.65mm"
 			(at 137.16 96.52 0)
 			(effects
 				(font

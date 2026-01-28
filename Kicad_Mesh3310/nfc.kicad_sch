@@ -1619,7 +1619,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mesh3310:NFC_2.8uH_COIL"
+		(property "Footprint" "mesh3310_footprints:NFC_2.8uH_COIL"
 			(at 106.68 113.03 0)
 			(effects
 				(font
@@ -1864,7 +1864,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lcsc:IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R"
+		(property "Footprint" "mesh3310_footprints:IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R"
 			(at 157.48 95.25 0)
 			(effects
 				(font

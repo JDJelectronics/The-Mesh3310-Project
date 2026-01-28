@@ -4830,7 +4830,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 99.06 105.41 0)
 			(effects
 				(font
@@ -4993,7 +4993,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_led"
+		(property "Footprint" "mesh3310_footprints:3310_led"
 			(at 60.96 176.53 0)
 			(effects
 				(font
@@ -5081,7 +5081,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 111.76 105.41 0)
 			(effects
 				(font
@@ -5237,7 +5237,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_led"
+		(property "Footprint" "mesh3310_footprints:3310_led"
 			(at 105.41 176.53 0)
 			(effects
 				(font
@@ -5325,7 +5325,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 111.76 85.09 0)
 			(effects
 				(font
@@ -5549,7 +5549,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_led"
+		(property "Footprint" "mesh3310_footprints:3310_led"
 			(at 114.3 176.53 0)
 			(effects
 				(font
@@ -5787,7 +5787,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Parts:3310_display"
+		(property "Footprint" "mesh3310_footprints:3310_display"
 			(at 233.68 105.41 0)
 			(effects
 				(font
@@ -6047,7 +6047,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 99.06 74.93 0)
 			(effects
 				(font
@@ -6117,7 +6117,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 99.06 85.09 0)
 			(effects
 				(font
@@ -6187,7 +6187,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 99.06 115.57 0)
 			(effects
 				(font
@@ -6257,7 +6257,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key_gap"
+		(property "Footprint" "mesh3310_footprints:3310_key_gap"
 			(at 124.46 105.41 0)
 			(effects
 				(font
@@ -6327,7 +6327,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 111.76 95.25 0)
 			(effects
 				(font
@@ -6397,7 +6397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 99.06 95.25 0)
 			(effects
 				(font
@@ -7111,7 +7111,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_led"
+		(property "Footprint" "mesh3310_footprints:3310_led"
 			(at 69.85 176.53 0)
 			(effects
 				(font
@@ -7199,7 +7199,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_led"
+		(property "Footprint" "mesh3310_footprints:3310_led"
 			(at 123.19 176.53 0)
 			(effects
 				(font
@@ -7877,7 +7877,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 124.46 115.57 0)
 			(effects
 				(font
@@ -8101,7 +8101,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 111.76 115.57 0)
 			(effects
 				(font
@@ -8171,7 +8171,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 111.76 74.93 0)
 			(effects
 				(font
@@ -8659,7 +8659,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Parts:3310_vibrator"
+		(property "Footprint" "mesh3310_footprints:3310_vibrator"
 			(at 212.09 41.91 0)
 			(effects
 				(font
@@ -8747,7 +8747,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_led"
+		(property "Footprint" "mesh3310_footprints:3310_led"
 			(at 96.52 176.53 0)
 			(effects
 				(font
@@ -8832,7 +8832,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Parts:3310_buzzer"
+		(property "Footprint" "mesh3310_footprints:3310_buzzer"
 			(at 246.38 41.91 0)
 			(effects
 				(font
@@ -9145,7 +9145,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 124.46 74.93 0)
 			(effects
 				(font
@@ -9215,7 +9215,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_led"
+		(property "Footprint" "mesh3310_footprints:3310_led"
 			(at 78.74 176.53 0)
 			(effects
 				(font
@@ -9391,7 +9391,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 124.46 85.09 0)
 			(effects
 				(font
@@ -9547,7 +9547,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_key"
+		(property "Footprint" "mesh3310_footprints:3310_key"
 			(at 124.46 95.25 0)
 			(effects
 				(font
@@ -9793,7 +9793,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Parts:3310_led"
+		(property "Footprint" "mesh3310_footprints:3310_led"
 			(at 87.63 176.53 0)
 			(effects
 				(font
