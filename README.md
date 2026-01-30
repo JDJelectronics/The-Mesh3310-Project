@@ -12,7 +12,7 @@ The Nokia 3310 is famous for its durability, tactile keypad, and ergonomic desig
 ⚡ Key Specifications (Draft)
 MCU: Nordic nRF52840 (Ultra-low power ARM Cortex-M4F).
 
-LoRa Radio: Semtech SX1262 for long-range communication.
+LoRa Radio: Semtech SX1272 for long-range communication.
 
 Charging: Integrated USB-C (modernized power delivery).
 
