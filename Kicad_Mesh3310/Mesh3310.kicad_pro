@@ -546,7 +546,7 @@
         "via_drill": 0.4
       },
       {
-        "clearance": 0.15,
+        "clearance": 0.127,
         "name": "GPIO",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
@@ -600,6 +600,9 @@
       ],
       "Net-(AE4-Pad1)": [
         "BT-RF"
+      ],
+      "Net-(ANT1-FEED)": [
+        "RF"
       ],
       "Net-(C33-Pad1)": [
         "BT-RF"
