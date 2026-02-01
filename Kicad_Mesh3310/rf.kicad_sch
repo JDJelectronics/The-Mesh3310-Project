@@ -1457,7 +1457,7 @@
 			(justify left bottom)
 		)
 		(uuid "4a01316e-5a8c-4326-9e08-143cf1c5cbda")
-		(property "Netclass" "RF"
+		(property "Netclass" "LORA-RF"
 			(at 172.1485 87.63 0)
 			(effects
 				(font

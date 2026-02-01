@@ -1818,7 +1818,7 @@
 		)
 		(uuid "76606c9e-76cd-4801-aaa1-2b42a58cff6d")
 	)
-	(text "Used with permission / community credit\nReference designs and libs from badge.team\nMCU and RF sections adapted from CyberAegg.\n\n"
+	(text "Used with permission / community credit\nReference designs and libs from badge.team\nMCU sections adapted from CyberAegg.\n\n"
 		(exclude_from_sim no)
 		(at 240.03 176.53 0)
 		(effects
@@ -1871,6 +1871,10 @@
 		(uuid "ed34cd5c-611b-499c-8343-7dcf55db877e")
 	)
 	(no_connect
+		(at 135.89 43.18)
+		(uuid "1a821cfd-da86-43d2-84e4-a011a637f67c")
+	)
+	(no_connect
 		(at 179.07 29.21)
 		(uuid "249f69db-5e7c-4d92-a629-79d4793d75fa")
 	)
@@ -1889,6 +1893,10 @@
 	(no_connect
 		(at 135.89 68.58)
 		(uuid "9ca4dab5-3d0f-4fbb-89ac-0aa780c92307")
+	)
+	(no_connect
+		(at 135.89 45.72)
+		(uuid "c7ced92e-e5f1-45d3-b911-0a25d798b4ef")
 	)
 	(no_connect
 		(at 245.11 105.41)
@@ -2049,16 +2057,6 @@
 			(type default)
 		)
 		(uuid "f092619e-dcce-4101-8ef0-ed06e1accccf")
-	)
-	(wire
-		(pts
-			(xy 110.49 43.18) (xy 135.89 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "027e8f11-770e-425e-acc0-8f1a61c5b630")
 	)
 	(wire
 		(pts
@@ -2389,16 +2387,6 @@
 			(type default)
 		)
 		(uuid "3cfba7a6-88c6-4550-8ac0-7189acf6d18e")
-	)
-	(wire
-		(pts
-			(xy 110.49 45.72) (xy 135.89 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43ad1530-29c6-4168-9499-7530785842b0")
 	)
 	(wire
 		(pts
@@ -6161,67 +6149,6 @@
 		)
 	)
 	(sheet
-		(at 82.55 41.91)
-		(size 27.94 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "19ad5818-2fa5-4508-982a-2aea75026032")
-		(property "Sheetname" "NFC"
-			(at 82.296 41.148 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "nfc.kicad_sch"
-			(at 82.55 47.5746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "NFC1" input
-			(at 110.49 43.18 0)
-			(uuid "1f11f465-a973-4c71-a898-c59eb47a8fb1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NFC2" input
-			(at 110.49 45.72 0)
-			(uuid "7b9b8f2f-8f85-47ef-a864-5345d74c2e55")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Mesh3310"
-				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 41.91 67.31)
 		(size 20.32 40.64)
 		(exclude_from_sim no)
@@ -6992,7 +6919,7 @@
 		(instances
 			(project "Mesh3310"
 				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab"
-					(page "7")
+					(page "6")
 				)
 			)
 		)
@@ -7166,7 +7093,7 @@
 		(instances
 			(project "Mesh3310"
 				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab"
-					(page "6")
+					(page "5")
 				)
 			)
 		)

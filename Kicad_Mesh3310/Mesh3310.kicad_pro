@@ -523,7 +523,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5
+        "track_width": 0.37
       },
       {
         "clearance": 0.2,
@@ -561,7 +561,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2939
+        "track_width": 0.37
       },
       {
         "clearance": 0.127,
@@ -602,7 +602,10 @@
         "BT-RF"
       ],
       "Net-(ANT1-FEED)": [
-        "RF"
+        "LORA-RF"
+      ],
+      "Net-(C30-Pad1)": [
+        "BT-RF"
       ],
       "Net-(C33-Pad1)": [
         "BT-RF"
@@ -932,10 +935,6 @@
     [
       "56951be9-e7d0-42f1-a860-fb701fde1659",
       "INTERFACES"
-    ],
-    [
-      "19ad5818-2fa5-4508-982a-2aea75026032",
-      "NFC"
     ],
     [
       "ea9d52f0-8f02-404f-aeff-3ba6e4bda9e9",
