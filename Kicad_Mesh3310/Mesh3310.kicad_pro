@@ -646,11 +646,11 @@
       },
       {
         "netclass": "GPIO",
-        "pattern": "/P1.11_QWIIC_SCL"
+        "pattern": "/P1.11_SCL"
       },
       {
         "netclass": "GPIO",
-        "pattern": "/P1.10_QWIIC_SDA"
+        "pattern": "/P1.10_SDA"
       }
     ]
   },
@@ -935,10 +935,6 @@
     [
       "56951be9-e7d0-42f1-a860-fb701fde1659",
       "INTERFACES"
-    ],
-    [
-      "ea9d52f0-8f02-404f-aeff-3ba6e4bda9e9",
-      "QWIIC"
     ],
     [
       "cbcf5f36-d6bc-4a44-8f70-36ed899140c5",
