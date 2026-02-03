@@ -604,6 +604,9 @@
       "Net-(ANT1-FEED)": [
         "LORA-RF"
       ],
+      "Net-(ANT2-FEEDING_POINT)": [
+        "BT-RF"
+      ],
       "Net-(C30-Pad1)": [
         "BT-RF"
       ],
