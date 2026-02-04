@@ -604,20 +604,83 @@
       "Net-(ANT1-FEED)": [
         "LORA-RF"
       ],
+      "Net-(ANT1-FEEDING_POINT)": [
+        "BT-RF"
+      ],
+      "Net-(ANT2-FEED)": [
+        "LORA-RF"
+      ],
       "Net-(ANT2-FEEDING_POINT)": [
         "BT-RF"
+      ],
+      "Net-(ANT3-FEED)": [
+        "LORA-RF"
       ],
       "Net-(C30-Pad1)": [
         "BT-RF"
       ],
+      "Net-(C31-Pad2)": [
+        "LORA-RF"
+      ],
+      "Net-(C32-Pad2)": [
+        "LORA-RF"
+      ],
       "Net-(C33-Pad1)": [
         "BT-RF"
+      ],
+      "Net-(C36-Pad2)": [
+        "LORA-RF"
+      ],
+      "Net-(C80-Pad2)": [
+        "LORA-RF"
+      ],
+      "Net-(C81-Pad2)": [
+        "LORA-RF"
+      ],
+      "Net-(C83-Pad2)": [
+        "LORA-RF"
       ],
       "Net-(FL1-IN)": [
         "RF"
       ],
       "Net-(FL1-OUT)": [
         "RF"
+      ],
+      "Net-(U1-RF1)": [
+        "LORA-RF"
+      ],
+      "Net-(U1-RF2)": [
+        "LORA-RF"
+      ],
+      "Net-(U1-RFC)": [
+        "LORA-RF"
+      ],
+      "Net-(U10-RFI_N)": [
+        "LORA-RF"
+      ],
+      "Net-(U10-RFI_P)": [
+        "LORA-RF"
+      ],
+      "Net-(U10-RFO)": [
+        "LORA-RF"
+      ],
+      "Net-(U3-RFI_N)": [
+        "LORA-RF"
+      ],
+      "Net-(U3-RFI_P)": [
+        "LORA-RF"
+      ],
+      "Net-(U3-RFO)": [
+        "LORA-RF"
+      ],
+      "Net-(U5-RF1)": [
+        "LORA-RF"
+      ],
+      "Net-(U5-RF2)": [
+        "LORA-RF"
+      ],
+      "Net-(U5-RFC)": [
+        "LORA-RF"
       ],
       "VBUS": [
         "Power"

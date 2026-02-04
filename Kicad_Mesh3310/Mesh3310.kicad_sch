@@ -2488,6 +2488,16 @@
 		)
 		(uuid "55b700cd-093a-48f0-a919-3c8655be109c")
 	)
+	(wire
+		(pts
+			(xy 64.77 130.81) (xy 44.45 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55cb1645-aa4d-463c-9e8b-2990241d0d0d")
+	)
 	(bus
 		(pts
 			(xy 128.27 41.91) (xy 128.27 44.45)
@@ -2817,6 +2827,16 @@
 			(type default)
 		)
 		(uuid "a84e4b74-9c57-4016-8520-6dfde668b989")
+	)
+	(wire
+		(pts
+			(xy 100.33 125.73) (xy 120.65 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a862b8c0-323d-44d8-9ea5-2275cea54191")
 	)
 	(wire
 		(pts
@@ -3158,7 +3178,7 @@
 		)
 		(uuid "041f3d25-d470-4e9e-95f1-1e65aedf625d")
 	)
-	(label "P1.08_CHRG"
+	(label "P0.05_~{CHG}"
 		(at 115.57 172.72 180)
 		(effects
 			(font
@@ -3248,7 +3268,7 @@
 		)
 		(uuid "2a36a5f5-3f95-4df3-9c2d-66c21495bbd9")
 	)
-	(label "P0.29_LORA_DIO0"
+	(label "P0.29_LORA_DIO1"
 		(at 44.45 128.27 0)
 		(effects
 			(font
@@ -3298,6 +3318,16 @@
 		)
 		(uuid "3459390e-b28e-4feb-b4c5-0f5730616f56")
 	)
+	(label "P0.04_LORA_RF_SW1"
+		(at 120.65 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "348679ea-5016-4d71-b5ee-0c0a520916fc")
+	)
 	(label "CC2"
 		(at 170.18 95.25 180)
 		(effects
@@ -3318,8 +3348,8 @@
 		)
 		(uuid "38203bf9-e446-448a-8515-f058998cd9c0")
 	)
-	(label "P0.30_~{CHG}"
-		(at 41.91 106.68 0)
+	(label "P0.05_~{CHG}"
+		(at 40.64 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3378,8 +3408,8 @@
 		)
 		(uuid "4bc0d4ca-d2e3-48b7-82c3-17cfa6b1ecf6")
 	)
-	(label "P0.04_BAT_RTC"
-		(at 40.64 40.64 0)
+	(label "P0.26_BAT_RTC"
+		(at 41.91 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3468,7 +3498,7 @@
 		)
 		(uuid "744837b0-9aef-4492-b2d5-0953f15c3e19")
 	)
-	(label "P0.29_LORA_DIO0"
+	(label "P0.29_LORA_DIO1"
 		(at 41.91 101.6 0)
 		(effects
 			(font
@@ -3608,6 +3638,16 @@
 		)
 		(uuid "b9af3c0a-484c-40f9-8877-916dac958a76")
 	)
+	(label "P0.04_LORA_RF_SW1"
+		(at 40.64 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb84020a-fa5a-471c-98a1-65750b88bec2")
+	)
 	(label "P1.14_LORA_MOSI"
 		(at 120.65 133.35 180)
 		(effects
@@ -3658,7 +3698,7 @@
 		)
 		(uuid "c8a8f9e2-2d36-4adf-a954-87d32687c71c")
 	)
-	(label "P0.04_BAT_RTC"
+	(label "P0.26_BAT_RTC"
 		(at 115.57 168.91 180)
 		(effects
 			(font
@@ -3687,6 +3727,16 @@
 			(justify right bottom)
 		)
 		(uuid "caa808b0-00ea-42bb-b9c0-091d51a7cc25")
+	)
+	(label "P0.28_LORA_BUSY"
+		(at 44.45 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d01e33e9-b476-4c68-88e6-0ea134a5a45e")
 	)
 	(label "P1.12_LORA_SPI_NSS"
 		(at 120.65 140.97 180)
@@ -3738,8 +3788,8 @@
 		)
 		(uuid "f1e61b7a-ffd1-4cb7-821f-31d3c786e9bd")
 	)
-	(label "P0.05_BAT_MEAS"
-		(at 40.64 43.18 0)
+	(label "P0.31_BAT_MEAS"
+		(at 41.91 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7038,14 +7088,34 @@
 				(justify right)
 			)
 		)
-		(pin "LORA_DIO0" input
-			(at 64.77 128.27 180)
-			(uuid "c3646e1c-da37-4025-a6dd-2e7825b458bd")
+		(pin "LORA_BUSY" input
+			(at 64.77 130.81 180)
+			(uuid "fda046e8-68e2-4abe-89e3-f6c954c74ab2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "LORA_DIO1" input
+			(at 64.77 128.27 180)
+			(uuid "d8c89c94-9ea0-401e-b91b-efa80ef78c59")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LORA_RF_SW1" input
+			(at 100.33 125.73 0)
+			(uuid "78fdfb83-c37e-42d1-9a08-c2ce3af7d9bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
