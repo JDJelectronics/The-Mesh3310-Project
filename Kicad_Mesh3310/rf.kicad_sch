@@ -2745,6 +2745,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 83.82) (xy 234.95 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96426dc1-a246-4aee-b53d-edc60765b13f")
+	)
+	(wire
+		(pts
 			(xy 138.43 62.23) (xy 143.51 62.23)
 		)
 		(stroke
@@ -2945,16 +2955,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 83.82) (xy 243.84 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf886432-462b-4586-8868-0485ec37540b")
-	)
-	(wire
-		(pts
 			(xy 24.13 110.49) (xy 24.13 106.68)
 		)
 		(stroke
@@ -3112,6 +3112,16 @@
 			(type default)
 		)
 		(uuid "e49f80db-b5db-4399-99ed-66c92cf3d0e5")
+	)
+	(wire
+		(pts
+			(xy 240.03 83.82) (xy 243.84 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9a3d3a0-5893-4d4e-a153-da558dd7d9a4")
 	)
 	(wire
 		(pts
@@ -3479,7 +3489,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape diamond)
-		(at 237.49 83.82 0)
+		(at 226.06 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3488,7 +3498,7 @@
 		)
 		(uuid "51473702-f297-415e-a025-f73248f3f51c")
 		(property "Netclass" "LORA-RF"
-			(at 235.458 82.804 90)
+			(at 224.028 82.804 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3497,7 +3507,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 24.13 12.7 0)
+			(at 12.7 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5938,6 +5948,137 @@
 			(project "Mesh3310"
 				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/d4d7259f-52be-4eaa-97bd-35f544c05202"
 					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 237.49 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "600bc7be-9636-4c58-acdc-fb016c511f86")
+		(property "Reference" "R6"
+			(at 237.49 78.74 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 237.49 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 237.49 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/25819-0402WGF1000TCE/C25076"
+			(at 237.49 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 237.49 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25076"
+			(at 237.49 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Resource" ""
+			(at 237.49 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "pin1" ""
+			(at 237.49 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "pin2" ""
+			(at 237.49 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "pin3" ""
+			(at 237.49 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "pin4" ""
+			(at 237.49 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "pin5" ""
+			(at 237.49 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8da47b69-ab2e-447e-8768-241218e00e41")
+		)
+		(pin "1"
+			(uuid "b6fa12b6-4703-4302-b628-a7398b3e754c")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/d4d7259f-52be-4eaa-97bd-35f544c05202"
+					(reference "R6")
 					(unit 1)
 				)
 			)
