@@ -3418,7 +3418,7 @@
 		)
 		(uuid "5c081487-a9b6-4d0c-bc0c-dccd2a6279e0")
 	)
-	(label "P1.14_LORA_MISO"
+	(label "P0.03_LORA_MISO"
 		(at 120.65 130.81 180)
 		(effects
 			(font
@@ -3940,7 +3940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 165.1 92.71 0)
 			(effects
 				(font
@@ -4334,7 +4334,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 31.75 35.56 0)
 			(effects
 				(font
@@ -5442,7 +5442,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 165.1 95.25 0)
 			(effects
 				(font
@@ -6898,6 +6898,48 @@
 			(project "Mesh3310"
 				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 231.648 100.076)
+		(size 26.924 23.368)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "98e1aac4-af48-4762-9c2a-9b5d76c64f4f")
+		(property "Sheetname" "GNSS"
+			(at 231.648 99.3644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gnss.kicad_sch"
+			(at 231.648 124.0286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab"
+					(page "6")
 				)
 			)
 		)

@@ -641,6 +641,9 @@
       "Net-(C83-Pad2)": [
         "LORA-RF"
       ],
+      "Net-(C87-Pad1)": [
+        "LORA-RF"
+      ],
       "Net-(FL1-IN)": [
         "RF"
       ],
@@ -651,9 +654,6 @@
         "LORA-RF"
       ],
       "Net-(U1-RF2)": [
-        "LORA-RF"
-      ],
-      "Net-(U1-RFC)": [
         "LORA-RF"
       ],
       "Net-(U10-RFI_N)": [
@@ -1006,6 +1006,10 @@
     [
       "cbcf5f36-d6bc-4a44-8f70-36ed899140c5",
       "POWER"
+    ],
+    [
+      "98e1aac4-af48-4762-9c2a-9b5d76c64f4f",
+      "GNSS"
     ]
   ],
   "text_variables": {}
