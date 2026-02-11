@@ -3188,16 +3188,6 @@
 		)
 		(uuid "04ba39cb-e283-4613-a783-2c3ed0912d59")
 	)
-	(label "P0.27_DSP_MOSI"
-		(at 41.91 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0a0f4ff7-d053-43b4-a583-778cfa85790e")
-	)
 	(label "P1.11_SCL"
 		(at 125.73 64.77 180)
 		(effects
@@ -3808,7 +3798,7 @@
 		)
 		(uuid "f8752fd9-1213-4435-93bd-40ae13c4fde2")
 	)
-	(label "P1.01_ROW_4"
+	(label "P1.04_ROW_4"
 		(at 125.73 49.53 180)
 		(effects
 			(font
