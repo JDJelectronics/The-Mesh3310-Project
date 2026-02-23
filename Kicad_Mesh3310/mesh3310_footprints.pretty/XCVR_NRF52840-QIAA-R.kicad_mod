@@ -51,9 +51,30 @@
 	)
 	(solder_mask_margin 0)
 	(solder_paste_margin 0.1)
-	(solder_paste_margin_ratio 0)
+	(solder_paste_margin_ratio -0)
 	(clearance 0.127)
 	(attr smd allow_soldermask_bridges)
+	(net_tie_pad_groups "74,F23,B7")
+	(fp_line
+		(start -1.5 -2.75)
+		(end -1.5 -2.25)
+		(stroke
+			(width 0.275)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "70e94b5d-8276-428f-b69a-1593c8dd0833")
+	)
+	(fp_line
+		(start 2.75 -1.5)
+		(end 2.2 -1.5)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(layer "F.Cu")
+		(uuid "7e482337-9556-4bc8-88df-756df07302c2")
+	)
 	(fp_line
 		(start -3.5 -3.5)
 		(end -1.95 -3.5)
@@ -931,4 +952,15 @@
 		(uuid "ca3691ba-5490-4dd8-b01e-fb3d4d954ae1")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/NRF52840-QIAA-R.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )
