@@ -1,0 +1,105 @@
+(footprint "3310_dc"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5b9e2205-c6c7-480c-8f75-92a261279a98")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "3310_dc"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "626bcc0f-ddef-430a-889c-4828b50018d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3376683a-9d74-4497-9c51-00399514cc9b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5c51b832-9325-4880-a5e2-712b77e6eab1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "27225f34-b8d9-4eff-80b3-8634d0bbbc9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 1 4 90)
+		(size 3 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "75059b88-3db4-4d06-b113-490470d0c10e")
+	)
+	(pad "2" smd roundrect
+		(at -1.15 -2 90)
+		(size 3.8 2.1)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "b0847131-a2f2-4398-9ea1-8f2a326ae3be")
+	)
+	(pad "3" smd roundrect
+		(at -5.06 0 90)
+		(size 2.5 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "5ba2637a-62a2-4485-9adc-68cca9267b4b")
+	)
+	(pad "4" smd roundrect
+		(at -3.78 -3.18 90)
+		(size 2.8 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "3ff7d141-295d-4a38-994e-692cd2deb26c")
+	)
+	(pad "5" smd roundrect
+		(at -6.36 -3.18 90)
+		(size 2.8 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "c3ea7c86-31bc-405a-bcc7-0b7a2db02dae")
+	)
+	(embedded_fonts no)
+)

@@ -4032,12 +4032,6 @@
 		(uuid "3eec5f14-61c3-4e28-a329-6e4a32963cb5")
 	)
 	(junction
-		(at 242.57 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "434634c5-a5af-4283-8e93-a60becaa5a91")
-	)
-	(junction
 		(at 134.62 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4543,16 +4537,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 110.49) (xy 242.57 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dff1e3b-39f3-420a-954a-068cbe26e4ee")
-	)
-	(wire
-		(pts
 			(xy 242.57 91.44) (xy 246.38 91.44)
 		)
 		(stroke
@@ -4753,7 +4737,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 107.95) (xy 242.57 110.49)
+			(xy 242.57 107.95) (xy 242.57 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5150,16 +5134,6 @@
 			(type default)
 		)
 		(uuid "b5451d11-3cdd-48c4-a132-483ee1f0d7d9")
-	)
-	(wire
-		(pts
-			(xy 242.57 111.76) (xy 242.57 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7797d7a-24d3-4565-8276-18e78a35165b")
 	)
 	(wire
 		(pts
@@ -9777,7 +9751,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 223.52 88.9 0)
 			(effects
 				(font
@@ -9856,118 +9830,6 @@
 			(project "Mesh3310"
 				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/62adca03-0f5f-4aef-8e1e-363483f74622"
 					(reference "TP7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 246.38 110.49 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "755653ec-78ce-47b7-b350-f8d37fc9891c")
-		(property "Reference" "TP5"
-			(at 251.46 109.2199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 251.46 111.7599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 246.38 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 246.38 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "pin1" ""
-			(at 246.38 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "pin2" ""
-			(at 246.38 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "pin3" ""
-			(at 246.38 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "pin4" ""
-			(at 246.38 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "pin5" ""
-			(at 246.38 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93dc1c37-0727-4051-b74b-fca47cce6cda")
-		)
-		(instances
-			(project "Mesh3310"
-				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/62adca03-0f5f-4aef-8e1e-363483f74622"
-					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -10399,7 +10261,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 223.52 91.44 0)
 			(effects
 				(font
@@ -12698,7 +12560,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 223.52 83.82 0)
 			(effects
 				(font
@@ -13337,7 +13199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 223.52 86.36 0)
 			(effects
 				(font
