@@ -14,6 +14,8 @@ MCU: Nordic nRF52840 (Ultra-low power ARM Cortex-M4F).
 
 LoRa Radio: Semtech SX1262 for long-range communication.
 
+GSM: Nordic nRF9151 for Dect Applications + LTE
+
 Charging: Integrated USB-C (modernized power delivery).
 
 Display/Input: Full support for the original monochrome LCD and 3x4 keypad.
@@ -37,4 +39,9 @@ We believe in the power of the community. Most of our coordination happens on Di
 
 Join our Discord:  https://discord.gg/uTabwbkp
 
-License
+<img width="343" height="823" alt="Schermafbeelding 2026-02-24 191950" src="https://github.com/user-attachments/assets/072e3358-aee3-4302-a7f2-4839f2a16c7a" />
+<img width="326" height="714" alt="3" src="https://github.com/user-attachments/assets/9f208cf2-5733-40c4-8cd0-d8a235ff07b0" />
+<img width="230" height="588" alt="2" src="https://github.com/user-attachments/assets/1292a167-f60e-40e2-b822-8d8abeee99a4" />
+
+
+License MIT
