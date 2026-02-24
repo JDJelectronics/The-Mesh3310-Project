@@ -1923,6 +1923,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "SX1262"
+		(exclude_from_sim no)
+		(at 18.542 23.368 0)
+		(effects
+			(font
+				(size 5.08 4.318)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a5c3156-72d6-4686-a1eb-92745377940b")
+	)
 	(text "Main MCU Clock oscillator"
 		(exclude_from_sim no)
 		(at 86.868 117.856 0)
@@ -9151,7 +9162,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 39.37 110.49 0)
 			(effects
 				(font

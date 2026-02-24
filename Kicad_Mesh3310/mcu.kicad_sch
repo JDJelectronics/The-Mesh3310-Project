@@ -4401,6 +4401,17 @@
 		)
 		(uuid "252d7f95-d163-49ad-b546-4fbb5a8dfbd7")
 	)
+	(text "nRF52840"
+		(exclude_from_sim no)
+		(at 18.542 22.098 0)
+		(effects
+			(font
+				(size 5.08 4.318)
+			)
+			(justify left bottom)
+		)
+		(uuid "4cdd83b0-afe9-4e25-b1b0-2a736e2e4ac7")
+	)
 	(text "32MHz"
 		(exclude_from_sim no)
 		(at 223.52 25.4 0)
@@ -6152,50 +6163,6 @@
 			)
 		)
 	)
-	(global_label "SWDCLK"
-		(shape input)
-		(at 246.38 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "17a76113-d1b4-483f-ba0a-4a6a42774834")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 254.7671 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SWDIO"
-		(shape input)
-		(at 45.72 57.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "3af576fa-f41a-4b7e-8269-c2db05023cee")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.6392 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "XL1"
 		(shape output)
 		(at 267.97 26.67 0)
@@ -6236,28 +6203,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SWDCLK"
-		(shape input)
-		(at 45.72 54.61 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "58e32237-068d-44af-9390-d379d7210b89")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.3329 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -6438,28 +6383,6 @@
 			)
 		)
 	)
-	(global_label "SWDIO"
-		(shape input)
-		(at 246.38 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "c8a48579-2252-47b6-b78d-c5a58a6439a1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 253.4608 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(hierarchical_label "P1.07"
 		(shape input)
 		(at 101.6 102.87 0)
@@ -6569,6 +6492,17 @@
 			(justify right)
 		)
 		(uuid "30ad2623-866d-4e3d-83c3-a8c5b359cc02")
+	)
+	(hierarchical_label "SWDIO"
+		(shape bidirectional)
+		(at 246.38 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "31d27f89-ea5c-4964-89a2-5541ebf6b789")
 	)
 	(hierarchical_label "P0.07"
 		(shape input)
@@ -6922,6 +6856,17 @@
 		)
 		(uuid "ba2725c0-c9de-4afe-b69c-cc04d2f50d69")
 	)
+	(hierarchical_label "SWDIO"
+		(shape bidirectional)
+		(at 45.72 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "baf4532b-bb6a-40ec-9aaa-a876b60d0f4a")
+	)
 	(hierarchical_label "P1.00_SWO"
 		(shape input)
 		(at 101.6 85.09 0)
@@ -6976,6 +6921,17 @@
 			(justify right)
 		)
 		(uuid "d19dc4e2-ace7-4c7b-98e9-7bc79a53f1c3")
+	)
+	(hierarchical_label "SWDCLK"
+		(shape output)
+		(at 45.72 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d584918b-627d-48d4-bc60-d2c9e1629057")
 	)
 	(hierarchical_label "P1.09"
 		(shape input)
@@ -7042,6 +6998,17 @@
 			(justify right)
 		)
 		(uuid "efd30b1c-f92b-43ad-bda7-cc2a92524f6b")
+	)
+	(hierarchical_label "SWDCLK"
+		(shape output)
+		(at 246.38 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f07c67a3-0ee1-4e9d-afb1-3e652918fcf7")
 	)
 	(hierarchical_label "P0.25_QSPI_CSN"
 		(shape input)
@@ -13417,7 +13384,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 157.48 38.1 0)
 			(effects
 				(font
@@ -14668,7 +14635,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 25.4 85.09 0)
 			(effects
 				(font
