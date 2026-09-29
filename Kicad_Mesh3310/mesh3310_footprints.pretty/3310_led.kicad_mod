@@ -102,4 +102,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "f60d94e9-a84b-4d36-ba21-42a538b97525")
 	)
+	(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 180 0 0)
+		)
+	)
 )

@@ -61,4 +61,15 @@
   (fp_line (start 3.25 -2.75) (end 3.25 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.25 2.75) (end -3.25 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.25 2.75) (end -3.25 -2.75) (layer F.CrtYd) (width 0.05))
+	(model "${KIPRJMOD}/3D_models/blokken/eSIM_MFF2.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

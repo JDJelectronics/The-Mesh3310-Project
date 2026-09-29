@@ -336,7 +336,7 @@
 		(uuid "cf148ba1-89e0-408b-a543-8a138815d4d6")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/QFN-24_L4.0-W4.0-H0.9-P0.50.wrl"
+	(model "${KIPRJMOD}/3D_models/QFN-24_L4.0-W4.0-H0.9-P0.50.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

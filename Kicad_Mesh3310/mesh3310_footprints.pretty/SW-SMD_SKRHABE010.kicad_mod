@@ -394,7 +394,7 @@
 		(uuid "2f65f586-de28-4400-acb9-086ac63bb992")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/SW-SMD_SKRHABE010.wrl"
+	(model "${KIPRJMOD}/3D_models/SW-SMD_SKRHABE010.wrl"
 		(offset
 			(xyz 0 -0 0.5)
 		)

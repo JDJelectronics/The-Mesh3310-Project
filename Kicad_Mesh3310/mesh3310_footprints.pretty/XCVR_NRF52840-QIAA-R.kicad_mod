@@ -952,7 +952,7 @@
 		(uuid "ca3691ba-5490-4dd8-b01e-fb3d4d954ae1")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/NRF52840-QIAA-R.step"
+	(model "${KIPRJMOD}/3D_models/NRF52840-QIAA-R.step"
 		(offset
 			(xyz 0 0 0)
 		)

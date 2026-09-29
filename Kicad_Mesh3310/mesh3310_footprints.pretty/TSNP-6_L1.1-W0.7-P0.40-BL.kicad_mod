@@ -25,7 +25,7 @@
 	(fp_circle (center -0.55 0.35) (end -0.52 0.35) (layer F.Fab) (width 0.06))
 	(fp_circle (center -0.40 0.19) (end -0.35 0.19) (layer Cmts.User) (width 0.10))
 	(fp_circle (center -0.55 0.79) (end -0.46 0.79) (layer F.SilkS) (width 0.15))
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/TSNP-6_L1.1-W0.7-H0.4-P0.40-BL.wrl"
+	(model "${KIPRJMOD}/3D_models/TSNP-6_L1.1-W0.7-H0.4-P0.40-BL.wrl"
 		(offset (xyz -0.000 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

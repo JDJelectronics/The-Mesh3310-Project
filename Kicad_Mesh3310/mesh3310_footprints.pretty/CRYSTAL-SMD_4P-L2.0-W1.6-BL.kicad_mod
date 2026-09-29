@@ -179,7 +179,7 @@
 		(uuid "cdead859-8995-4b36-b16f-88dfe2a8c622")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/CRYSTAL-SMD_4P-L2.0-W1.6-BL.wrl"
+	(model "${KIPRJMOD}/3D_models/CRYSTAL-SMD_4P-L2.0-W1.6-BL.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

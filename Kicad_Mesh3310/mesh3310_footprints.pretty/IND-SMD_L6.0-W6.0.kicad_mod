@@ -156,7 +156,7 @@
 		(uuid "eafe111d-2574-456d-aabb-9913a797b1ed")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/IND-SMD_L6.0-W6.0-H4.5.wrl"
+	(model "${KIPRJMOD}/3D_models/IND-SMD_L6.0-W6.0-H4.5.wrl"
 		(offset
 			(xyz -0 -0 -0)
 		)

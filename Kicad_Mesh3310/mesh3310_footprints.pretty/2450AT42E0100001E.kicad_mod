@@ -31,9 +31,15 @@
   (pad 2 smd rect (at -1.750 -0.8 90) (size 0.600 1.500) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at -1.750 0.8 90) (size 0.600 1.500) (layers F.Cu F.Paste F.Mask))
   (pad 4 smd rect (at 1.750 0.8 90) (size 0.600 1.500) (layers F.Cu F.Paste F.Mask))
-  (model 2450AT42E0100001E.stp
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+	(model "${KIPRJMOD}/3D_models/blokken/2450AT42E0100001E.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

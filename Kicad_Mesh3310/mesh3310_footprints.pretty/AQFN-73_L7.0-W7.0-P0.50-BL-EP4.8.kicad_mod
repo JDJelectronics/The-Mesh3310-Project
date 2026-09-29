@@ -165,7 +165,7 @@
 	(fp_circle (center -3.25 0.75) (end -3.19 0.75) (layer F.Fab) (width 0.12))
 	(fp_circle (center -3.25 1.25) (end -3.19 1.25) (layer F.Fab) (width 0.12))
 	(fp_circle (center -3.35 3.85) (end -3.25 3.85) (layer F.SilkS) (width 0.20))
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/AQFN-73_L7.0-W7.0-H0.9-P0.50.wrl"
+	(model "${KIPRJMOD}/3D_models/AQFN-73_L7.0-W7.0-H0.9-P0.50.wrl"
 		(offset (xyz 0.000 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 270))

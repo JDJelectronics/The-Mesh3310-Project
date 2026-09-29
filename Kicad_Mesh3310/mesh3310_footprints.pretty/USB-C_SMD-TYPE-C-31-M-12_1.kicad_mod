@@ -67,7 +67,7 @@
 	(fp_circle (center 4.48 -2.76) (end 4.51 -2.76) (layer F.Fab) (width 0.06))
 	(fp_circle (center 2.90 -1.21) (end 3.02 -1.21) (layer Cmts.User) (width 0.25))
 	(fp_circle (center -2.90 -1.21) (end -2.78 -1.21) (layer Cmts.User) (width 0.25))
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/USB-C_SMD-TYPE-C-31-M-12_1.wrl"
+	(model "${KIPRJMOD}/3D_models/USB-C_SMD-TYPE-C-31-M-12_1.wrl"
 		(offset (xyz 0.000 -1.100 0.850))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 180))

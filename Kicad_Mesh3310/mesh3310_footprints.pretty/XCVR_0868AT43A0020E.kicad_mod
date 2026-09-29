@@ -188,4 +188,15 @@
 		(uuid "8366aa45-7811-40d9-b95d-4c9480cc57cc")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/3D_models/blokken/0868AT43A0020E.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

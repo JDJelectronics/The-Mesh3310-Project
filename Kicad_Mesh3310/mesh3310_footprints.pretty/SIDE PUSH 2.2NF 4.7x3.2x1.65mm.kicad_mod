@@ -144,4 +144,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "a2cf1121-968f-473a-91a0-bdd7ee769a89")
 	)
+	(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/Panasonic_EVQPUJ_EVQPUA.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

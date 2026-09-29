@@ -105,4 +105,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "aa0e6f0e-6d96-49cf-8b17-6711133fadf0")
 	)
+	(model "${KIPRJMOD}/3D_models/blokken/ML414H.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

@@ -290,7 +290,7 @@
 		(uuid "69b8bd89-aa03-4efb-adae-f663b139c37c")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/FPC-SMD_24P-P0.50_SHOU-HAN_CTSJ-H2.0.wrl"
+	(model "${KIPRJMOD}/3D_models/FPC-SMD_24P-P0.50_SHOU-HAN_CTSJ-H2.0.wrl"
 		(offset
 			(xyz -17.4 -6.5 0)
 		)
@@ -301,7 +301,7 @@
 			(xyz -0 -0 -0)
 		)
 	)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/Waveshare 1.54 (B) E ink - Display Folded.stp"
+	(model "${KIPRJMOD}/3D_models/Waveshare 1.54 (B) E ink - Display Folded.stp"
 		(offset
 			(xyz 0 14.5 -1)
 		)

@@ -28,7 +28,7 @@
 	(fp_circle (center -1.00 1.05) (end -0.97 1.05) (layer F.Fab) (width 0.06))
 	(fp_circle (center -0.69 1.35) (end -0.49 1.35) (layer Cmts.User) (width 0.40))
 	(fp_circle (center -1.14 1.47) (end -1.02 1.47) (layer F.SilkS) (width 0.24))
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/SOT-363-6_L2.0-W1.25-LS2.1-BL.wrl"
+	(model "${KIPRJMOD}/3D_models/SOT-363-6_L2.0-W1.25-LS2.1-BL.wrl"
 		(offset (xyz 0.000 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

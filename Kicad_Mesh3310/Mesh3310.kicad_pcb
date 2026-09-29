@@ -2218,6 +2218,17 @@
 			(uuid "c810dc4b-a9aa-44b0-8fa9-4393a807fe1a")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3D_models/blokken/SKY65723.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0201_0603Metric"
 		(layer "F.Cu")
@@ -3559,6 +3570,17 @@
 			(uuid "9ad27971-1dc8-4aa9-80df-c1b7d43e1770")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 180 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -4124,6 +4146,17 @@
 			(uuid "b4291d93-699e-4408-b73e-690b67238f72")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 180 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0201_0603Metric"
 		(layer "F.Cu")
@@ -5147,7 +5180,7 @@
 			(uuid "c7983f9f-dbac-48a2-91b5-59a3134a29aa")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/symbols/lcsc.3dshapes/CRYSTAL-SMD_4P-L2.0-W1.6-BL.wrl"
+		(model "${KIPRJMOD}/3D_models/CRYSTAL-SMD_4P-L2.0-W1.6-BL.wrl"
 			(offset
 				(xyz 0 -0 -0)
 			)
@@ -9438,7 +9471,7 @@
 			(uuid "53b7ef3b-493e-46d3-8f0d-6ba08e731aae")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10562,6 +10595,17 @@
 			(uuid "6196d056-d30f-4fb9-9a00-e019d479788f")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 180 0 0)
+			)
+		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -10833,7 +10877,7 @@
 			(uuid "81dd0738-7381-4fa2-86df-af56fcf9df52")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11878,6 +11922,17 @@
 			(uuid "977e5d79-5657-48cf-80fc-ff47f5a9ec01")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3D_models/MX25R1635FZNIH0.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Inductor_SMD:L_0201_0603Metric"
 		(layer "F.Cu")
@@ -13687,6 +13742,17 @@
 			(uuid "9ee3c3d0-b11c-4bab-80c4-d736c39e07f0")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 180 0 0)
+			)
+		)
 	)
 	(footprint "mesh3310_footprints:IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R"
 		(layer "F.Cu")
@@ -13966,7 +14032,7 @@
 			(uuid "42238601-6f8b-47ef-a9f5-758722d23646")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/symbols/lcsc.3dshapes/IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R.wrl"
+		(model "${KIPRJMOD}/3D_models/IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R.wrl"
 			(offset
 				(xyz 0 -0.77 -0)
 			)
@@ -15973,6 +16039,17 @@
 			(uuid "5e15b67c-4cf8-4390-a224-2ed74b073092")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 180 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0201_0603Metric"
 		(layer "F.Cu")
@@ -16929,6 +17006,17 @@
 			(uuid "e0b56eff-b0ab-4f43-ad7b-5e123c0c2128")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 180 0 0)
+			)
+		)
 	)
 	(footprint "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm"
 		(layer "F.Cu")
@@ -18602,6 +18690,17 @@
 			(uuid "e9b08f15-7987-4f0b-a628-af5b2a1486cf")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/Panasonic_EVQPUJ_EVQPUA.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Inductor_SMD:L_0201_0603Metric"
 		(layer "F.Cu")
@@ -20758,6 +20857,17 @@
 			(uuid "368c9f77-1a04-4e10-82f2-542fba7fc552")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3D_models/blokken/ML414H.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Inductor_SMD:L_0603_1608Metric"
 		(layer "F.Cu")
@@ -22601,7 +22711,7 @@
 			(uuid "706a4f35-3ae2-4a88-a9e6-9d1191ec477c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23349,7 +23459,7 @@
 			(uuid "5655ea2e-a26d-4b02-9a13-c5cedfdbea1e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm.step"
+		(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/TQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23489,6 +23599,17 @@
 			(uuid "72f20bc1-de89-4518-a6bb-743b93f7f898")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 180 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0201_0603Metric"
 		(layer "F.Cu")
@@ -25335,7 +25456,7 @@
 			(uuid "5ab27f85-a503-4cee-a3a4-777ee6fc6dfa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26522,6 +26643,17 @@
 			(uuid "8b3bd4d0-06dc-4daa-ac00-2c570fe05f6b")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 180 0 0)
+			)
+		)
 	)
 	(footprint "mesh3310_footprints:IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R"
 		(layer "F.Cu")
@@ -26802,7 +26934,7 @@
 			(uuid "faaa4c5f-e6f7-45f8-bd16-e3ae582d48df")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/symbols/lcsc.3dshapes/IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R.wrl"
+		(model "${KIPRJMOD}/3D_models/IPEX-SMD_3P-L2.6-W2.6-LS3.0_RF1200001R.wrl"
 			(offset
 				(xyz 0 -0.77 -0)
 			)
@@ -28980,6 +29112,17 @@
 			(uuid "39fcf561-639e-496d-a195-bf2aa5693466")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3D_models/blokken/eSIM_MFF2.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
 		(layer "F.Cu")
@@ -29554,7 +29697,7 @@
 			(uuid "1f1d072f-1fee-4654-9c29-86642f01d696")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.step"
+		(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/TQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29923,7 +30066,7 @@
 			(uuid "7aadcadb-d2fe-4df7-8f35-8894d29c40b1")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/symbols/lcsc.3dshapes/SOT-363-6_L2.0-W1.25-LS2.1-BL.wrl"
+		(model "${KIPRJMOD}/3D_models/SOT-363-6_L2.0-W1.25-LS2.1-BL.wrl"
 			(offset
 				(xyz 0 -0 -0)
 			)
@@ -30432,7 +30575,7 @@
 			(uuid "ecfdec38-c36d-455c-9e4d-535964e7bb38")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35807,6 +35950,17 @@
 			(uuid "95d44d0a-e234-4dd7-a3a5-692cdd03cec9")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3D_models/blokken/nRF9151_11x12.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0201_0603Metric"
 		(layer "F.Cu")
@@ -36483,7 +36637,7 @@
 			(uuid "86f7dd97-4c76-4782-b475-d853097c4e7d")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/symbols/lcsc.3dshapes/CRYSTAL-SMD_4P-L2.0-W1.6-BL.wrl"
+		(model "${KIPRJMOD}/3D_models/CRYSTAL-SMD_4P-L2.0-W1.6-BL.wrl"
 			(offset
 				(xyz 0 -0 -0)
 			)
@@ -38747,7 +38901,7 @@
 			(uuid "4203a618-cef6-47ea-9996-bc1e04d00baf")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/symbols/lcsc.3dshapes/NRF52840-QIAA-R.step"
+		(model "${KIPRJMOD}/3D_models/NRF52840-QIAA-R.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39346,7 +39500,7 @@
 			(uuid "367001ff-93e7-4caa-8dfb-aa9e77e21085")
 		)
 		(embedded_fonts no)
-		(model "2450AT42E0100001E.stp"
+		(model "${KIPRJMOD}/3D_models/blokken/2450AT42E0100001E.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40362,7 +40516,7 @@
 			(uuid "6156a08d-08dd-462c-a6c5-ae2ab4b8174c")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/symbols/lcsc.3dshapes/QFN-24_L4.0-W4.0-H0.9-P0.50.wrl"
+		(model "${KIPRJMOD}/3D_models/QFN-24_L4.0-W4.0-H0.9-P0.50.wrl"
 			(offset
 				(xyz 0 -0 -0)
 			)
@@ -41109,7 +41263,7 @@
 			(uuid "f42e1f59-2077-4c4f-83cd-4b0b458897d5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44170,6 +44324,17 @@
 			(uuid "54fb802b-830f-453f-8e0f-873663f57e83")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3D_models/blokken/0868AT43A0020E.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "mesh3310_footprints:3310_key"
 		(locked yes)

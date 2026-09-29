@@ -116,7 +116,7 @@
 		(uuid "01903150-d7ab-4af1-ab45-32bb3cacda46")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/FC-135R_L3.2-W1.5.wrl"
+	(model "${KIPRJMOD}/3D_models/FC-135R_L3.2-W1.5.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

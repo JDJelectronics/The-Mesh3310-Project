@@ -279,7 +279,7 @@
 		(uuid "43589014-a93a-44f3-9e01-9494117f7333")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/CONN-SMD_ZH1.5-WS-2P.wrl"
+	(model "${KIPRJMOD}/3D_models/CONN-SMD_ZH1.5-WS-2P.wrl"
 		(offset
 			(xyz 0 -0.81 -0)
 		)

@@ -150,7 +150,7 @@
 		(uuid "b70363fe-a2c6-4a28-b689-d34229d75b1a")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/LED-ARRAY-SMD_4P-L1.6-W1.5-BR_XL-1615RGBC-RF.wrl"
+	(model "${KIPRJMOD}/3D_models/LED-ARRAY-SMD_4P-L1.6-W1.5-BR_XL-1615RGBC-RF.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

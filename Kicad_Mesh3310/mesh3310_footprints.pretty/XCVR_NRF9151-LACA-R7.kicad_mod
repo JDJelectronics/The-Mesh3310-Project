@@ -1961,4 +1961,15 @@
       (xy -0.675 4.45)
     ) (layer F.Paste) (width 0.01)
   )
+	(model "${KIPRJMOD}/3D_models/blokken/nRF9151_11x12.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

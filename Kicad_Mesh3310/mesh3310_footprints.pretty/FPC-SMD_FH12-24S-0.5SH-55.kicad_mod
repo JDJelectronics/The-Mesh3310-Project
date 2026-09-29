@@ -351,7 +351,7 @@
 		(uuid "a52dd83d-4fe1-4448-9230-e5783c1963d8")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/FPC-SMD_FH12-24S-0.5SH-55.wrl"
+	(model "${KIPRJMOD}/3D_models/FPC-SMD_FH12-24S-0.5SH-55.wrl"
 		(offset
 			(xyz 0 1.41 -0)
 		)

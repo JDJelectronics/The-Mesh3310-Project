@@ -294,7 +294,7 @@
 		(uuid "effa58f7-d83a-472e-ba8f-aa40af95dd00")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/symbols/lcsc.3dshapes/VSON-14_L4.0-W3.0-H1.0-P0.50.wrl"
+	(model "${KIPRJMOD}/3D_models/VSON-14_L4.0-W3.0-H1.0-P0.50.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)
