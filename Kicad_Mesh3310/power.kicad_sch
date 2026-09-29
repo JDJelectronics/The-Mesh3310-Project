@@ -2949,12 +2949,6 @@
 		(uuid "2174deff-96cc-422f-a787-1b94951fbf38")
 	)
 	(junction
-		(at 97.79 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "235eddd4-7dc3-43be-a6ce-380ae457829c")
-	)
-	(junction
 		(at 256.54 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2977,12 +2971,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d026287-df82-49ae-a130-883f2924625e")
-	)
-	(junction
-		(at 97.79 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6e624560-f00f-46eb-b0a2-2651b418fb5e")
 	)
 	(junction
 		(at 142.24 104.14)
@@ -3249,16 +3237,6 @@
 			(type default)
 		)
 		(uuid "411e301f-4b20-4be0-b22c-a92ce24e63f5")
-	)
-	(wire
-		(pts
-			(xy 99.06 91.44) (xy 97.79 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4172ecef-e952-44ca-a023-4f1a50799750")
 	)
 	(wire
 		(pts
@@ -3632,16 +3610,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 91.44) (xy 97.79 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd0040c6-4faf-43d5-a315-d3b4667f360c")
-	)
-	(wire
-		(pts
 			(xy 50.8 147.32) (xy 54.61 147.32)
 		)
 		(stroke
@@ -3964,17 +3932,6 @@
 			(justify left)
 		)
 		(uuid "9064d901-92dd-4e26-afbb-a7d79193f3e1")
-	)
-	(hierarchical_label "~{CHG}"
-		(shape passive)
-		(at 99.06 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "990148cc-eab3-4bb2-9467-f81a85735d95")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4410,6 +4367,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C304544"
+			(at 103.632 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Datasheet" "~"
 			(at 105.41 106.68 0)
 			(effects
@@ -4462,7 +4428,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C")
 		(at 232.41 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4480,7 +4446,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "22uF/10V"
 			(at 236.22 86.7409 0)
 			(effects
 				(font
@@ -4489,7 +4455,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 233.3752 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C45783"
 			(at 233.3752 90.17 0)
 			(effects
 				(font
@@ -4576,6 +4551,15 @@
 			)
 		)
 		(property "Footprint" "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm"
+			(at 219.71 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15516"
 			(at 219.71 104.14 0)
 			(effects
 				(font
@@ -4699,6 +4683,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C3152012"
+			(at 170.688 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Datasheet" "~"
 			(at 168.91 114.3 0)
 			(effects
@@ -4777,6 +4770,15 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 52.832 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3152043"
 			(at 52.832 106.68 90)
 			(effects
 				(font
@@ -5006,6 +5008,15 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 96.012 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3152038"
 			(at 96.012 96.52 90)
 			(effects
 				(font
@@ -5322,6 +5333,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C79401"
+			(at 160.02 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Datasheet" ""
 			(at 160.02 91.44 0)
 			(effects
@@ -5543,6 +5563,15 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 107.188 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C304544"
 			(at 107.188 96.52 90)
 			(effects
 				(font
@@ -5837,6 +5866,16 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C54313"
+			(at 82.55 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/bq24074.pdf"
 			(at 82.55 85.09 0)
 			(effects
@@ -6048,7 +6087,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C")
 		(at 215.9 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6066,7 +6105,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "22uF/10V"
 			(at 219.71 86.7409 0)
 			(effects
 				(font
@@ -6075,7 +6114,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 216.8652 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C45783"
 			(at 216.8652 90.17 0)
 			(effects
 				(font
@@ -6164,6 +6212,15 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 174.2948 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C408130"
 			(at 174.2948 91.44 0)
 			(effects
 				(font
@@ -6398,6 +6455,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C3152038"
+			(at 88.392 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Datasheet" "~"
 			(at 90.17 106.68 0)
 			(effects
@@ -6615,6 +6681,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5355496"
+			(at 241.3 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BAT60ASERIES-DS-v01_01-en.pdf?fileId=db3a304313d846880113def70c9304a9"
 			(at 241.3 80.01 0)
 			(effects
@@ -6767,6 +6842,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C3152043"
+			(at 251.46 78.232 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Datasheet" "~"
 			(at 251.46 80.01 0)
 			(effects
@@ -6846,6 +6930,15 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 112.0648 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C408130"
 			(at 112.0648 102.87 0)
 			(effects
 				(font
@@ -6998,6 +7091,15 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 60.452 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C473538"
 			(at 60.452 106.68 90)
 			(effects
 				(font
@@ -7160,6 +7262,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C113080"
+			(at 184.15 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Datasheet" "~"
 			(at 184.15 95.25 0)
 			(effects
@@ -7240,6 +7351,15 @@
 			)
 		)
 		(property "Footprint" "mesh3310_footprints:SIDE PUSH 2.2NF 4.7x3.2x1.65mm"
+			(at 137.16 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C128539"
 			(at 137.16 96.52 0)
 			(effects
 				(font
@@ -7370,5 +7490,887 @@
 				)
 			)
 		)
+	)
+	(text "Ontkoppeling BQ24074 (IN / OUT / BAT) en TPS63031 VIN\ndicht bij de pinnen plaatsen"
+		(exclude_from_sim no)
+		(at 118.11 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd26b6e5-0054-4c4d-a3d5-a2be9f2b460d")
+	)
+	(label "VSYS"
+		(at 158.75 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df9bd600-87dc-4712-adbe-09441ae4a9d5")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b83362c-d94d-4ace-9cd0-1bb5c50a0ef5")
+		(property "Reference" "#PWR0129"
+			(at 158.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5c44b31-1726-4aea-893e-2d41dc38a5e2")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "#PWR0129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 158.75 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23c9462e-b2dd-4347-bf3f-bf549fa57f8c")
+		(property "Reference" "C92"
+			(at 162.56 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10uF/10V"
+			(at 162.56 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 157.7848 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
+			(at 157.7848 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "810-CGA2B3X7R1H104KB"
+			(at 158.75 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "810-CGA2B3X7R1H104KB"
+			(at 158.75 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "564ae928-1b26-47e1-bee6-d69eb8818001")
+		)
+		(pin "2"
+			(uuid "080b5682-4eb0-40de-94f3-e3b4e7ff79e4")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "C92")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VBAT"
+		(at 146.05 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5abe535b-9f3d-4800-bc84-e9b313a6725a")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f053a3a8-f086-4d91-8bd1-3ddde8d385ba")
+		(property "Reference" "#PWR0128"
+			(at 146.05 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22b6f6b9-b49d-4eac-884b-5c5fc61c7c4e")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "#PWR0128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 146.05 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b574edc-3d62-4baa-b48b-f7c83c6b39f4")
+		(property "Reference" "C91"
+			(at 149.86 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7uF/10V"
+			(at 149.86 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 145.0848 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 145.0848 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 146.05 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "810-CGA2B3X7R1H104KB"
+			(at 146.05 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "810-CGA2B3X7R1H104KB"
+			(at 146.05 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63cdcaf0-fad8-4d97-945d-376113fac565")
+		)
+		(pin "2"
+			(uuid "60804b3e-7ad4-42aa-bc19-cf4bcbf6e8fa")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "C91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VSYS"
+		(at 133.35 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "deeb1230-b1db-4761-a860-ead3439b9506")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 133.35 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb6e3c08-4e67-476d-b68a-a73dbb90964d")
+		(property "Reference" "#PWR0127"
+			(at 133.35 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d82e7dba-ca0f-4ce9-9d92-f85feb6f8415")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 133.35 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94c797e2-4bae-4928-af56-f4bab02b192b")
+		(property "Reference" "C90"
+			(at 137.16 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7uF/10V"
+			(at 137.16 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 132.3848 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 132.3848 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 133.35 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "810-CGA2B3X7R1H104KB"
+			(at 133.35 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "810-CGA2B3X7R1H104KB"
+			(at 133.35 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51eca65a-3ff2-4106-a3d8-1131c761fbfd")
+		)
+		(pin "2"
+			(uuid "abe0e9a0-fbce-4fe0-9c37-186458984045")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "C90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 120.65 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "864bb2f2-e319-4ed7-aca3-399fb4c4cfb2")
+		(property "Reference" "#PWR0126"
+			(at 120.65 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 120.65 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 120.65 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48d13fa0-ed4e-4258-8766-cd877b8c6e27")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "#PWR0126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 120.65 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c60ca61d-587b-430d-82ae-87d0511a5e4f")
+		(property "Reference" "#PWR0125"
+			(at 120.65 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 120.65 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04f28f74-b106-4758-b276-c21a749d30a5")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "#PWR0125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 120.65 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3196de09-79c3-4c84-986c-97613e09035f")
+		(property "Reference" "C89"
+			(at 124.46 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1uF/25V"
+			(at 124.46 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 119.6848 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 119.6848 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 120.65 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "810-CGA2B3X7R1H104KB"
+			(at 120.65 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "810-CGA2B3X7R1H104KB"
+			(at 120.65 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6d94db8-3572-4aff-a8aa-e99b9e29ba58")
+		)
+		(pin "2"
+			(uuid "f9e3d92f-b986-45f4-8c78-24b1a4cb0542")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "C89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VBAT"
+		(at 105.41 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "32761219-c111-490b-824e-070d78e33027")
+	)
+	(label "VSYS"
+		(at 97.79 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d03aecd-ced3-4056-aa3c-a5956d51785a")
+	)
+	(hierarchical_label "~{CHG}"
+		(shape output)
+		(at 97.79 104.14 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9945ec73-1f3e-4c36-9ebf-91ba2558d9ae")
+	)
+	(junction
+		(at 97.79 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37b0a540-24f8-43e8-af6c-03fb9ce89dd1")
+	)
+	(wire
+		(pts
+			(xy 97.79 100.33) (xy 97.79 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "919e2602-2b18-4cad-b160-1e19a314ac8b")
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 97.79 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35385a56-77c3-4f7a-9368-5c75082af8f3")
+		(property "Reference" "#PWR0124"
+			(at 97.79 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 97.79 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 97.79 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f276b721-bdbc-48af-8b34-7319c9124d68")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
+					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VSYS"
+		(at 175.26 91.44 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fa5915a-27df-4b8d-beb7-ec1b33b069a5")
 	)
 )

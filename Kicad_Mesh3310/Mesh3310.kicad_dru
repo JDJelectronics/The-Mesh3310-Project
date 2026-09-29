@@ -1,0 +1,30 @@
+(version 1)
+
+# De RF-netklassen hebben een grote vrije ruimte (voor de massavulling rond 50-ohm-lijnen).
+# Tussen pads onderling (o.a. binnen één 0201) is JLC-minimum 0,1 mm voldoende.
+(rule "pad_pad"
+  (constraint clearance (min 0.1mm))
+  (condition "A.Type == 'Pad' && B.Type == 'Pad'"))
+
+# Backlight-LED's zijn achterstevoren gemonteerd en schijnen door hun eigen uitsparing;
+# de pads liggen bewust tegen de rand van die uitsparing.
+(rule "backlight_led_uitsparing"
+  (constraint edge_clearance (min 0mm))
+  (condition "A.memberOfFootprint('D5') || A.memberOfFootprint('D6') || A.memberOfFootprint('D7') || A.memberOfFootprint('D9') || A.memberOfFootprint('D10') || A.memberOfFootprint('D11') || A.memberOfFootprint('D12') || A.memberOfFootprint('D13') || B.memberOfFootprint('D5') || B.memberOfFootprint('D6') || B.memberOfFootprint('D7') || B.memberOfFootprint('D9') || B.memberOfFootprint('D10') || B.memberOfFootprint('D11') || B.memberOfFootprint('D12') || B.memberOfFootprint('D13')"))
+
+# 50-ohm coplanair (CPWG) op JLC06161H-3313: spoor 0,14 mm met 0,30 mm spleet naar de massavulling (In1 op 0,0994 mm).
+(rule "rf_spleet_naar_vulling"
+  (constraint clearance (min 0.3mm))
+  (condition "(A.NetClass == 'LORA-RF' || A.NetClass == 'LTE-RF' || A.NetClass == 'BT-RF') && B.Type == 'Zone'"))
+
+# BLE-antennepin (ANT, H23) van de nRF52840 ligt tussen VSS_PA en DEC5 op 0,5 mm pitch:
+# 0,2 mm vrije ruimte is bij de pin-uitloop fysiek onmogelijk (layout volgens Nordic-referentie).
+(rule "ble_ant_pin_uitloop"
+  (constraint clearance (min 0.15mm))
+  (condition "A.NetName == 'ANT' && (B.NetName == 'VSS_PA' || B.NetName == '/MCU/DEC5') && A.insideCourtyard('U13')"))
+
+# Testpunten TP6-TP13 onderaan vormen samen het pogo-pin-raster van de testmal;
+# hun courtyards overlappen bewust (de pads zelf houden wel afstand).
+(rule "testmal_testpunten"
+  (constraint courtyard_clearance (min -2mm))
+  (condition "A.Reference == 'TP*' && B.Reference == 'TP*'"))

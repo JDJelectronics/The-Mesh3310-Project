@@ -1,4 +1,4 @@
 (fp_lib_table
   (version 7)
-  (lib (name "Parts")(type "KiCad")(uri "${KIPRJMOD}/Parts.pretty")(options "")(descr ""))
+  (lib (name "mesh3310_footprints")(type "KiCad")(uri "${KIPRJMOD}/mesh3310_footprints.pretty")(options "")(descr "Projectfootprints Mesh3310"))
 )

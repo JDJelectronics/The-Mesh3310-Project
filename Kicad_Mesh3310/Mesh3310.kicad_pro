@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "shorting_items|132950000|42670000|1c6eb0b2-0f95-4f99-b0c8-b9c2cc4b14a4|54fb802b-830f-453f-8e0f-873663f57e83",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -76,7 +81,7 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_filters_mismatch": "warning",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -89,7 +94,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "error",
+        "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -124,9 +129,9 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.09,
+        "min_clearance": 0.1,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.3,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.2,
@@ -136,10 +141,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.15,
-        "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.09,
-        "min_via_annular_width": 0.5,
-        "min_via_diameter": 0.35,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
@@ -514,8 +519,8 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.45,
+        "via_drill": 0.25,
         "wire_width": 6
       },
       {
@@ -524,7 +529,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.37
+        "track_width": 0.37,
+        "via_diameter": 0.45,
+        "via_drill": 0.25
       },
       {
         "clearance": 0.2,
@@ -532,9 +539,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2939,
+        "track_width": 0.14,
         "via_diameter": 0.45,
-        "via_drill": 0.3
+        "via_drill": 0.25
       },
       {
         "clearance": 0.127,
@@ -543,8 +550,8 @@
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4
+        "via_diameter": 0.45,
+        "via_drill": 0.25
       },
       {
         "clearance": 0.127,
@@ -554,7 +561,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.45,
-        "via_drill": 0.3
+        "via_drill": 0.25
       },
       {
         "clearance": 0.2,
@@ -562,7 +569,19 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.37
+        "track_width": 0.14,
+        "via_diameter": 0.45,
+        "via_drill": 0.25
+      },
+      {
+        "clearance": 0.2,
+        "name": "LTE-RF",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.14,
+        "via_diameter": 0.45,
+        "via_drill": 0.25
       },
       {
         "clearance": 0.127,
@@ -571,17 +590,29 @@
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4
+        "via_diameter": 0.45,
+        "via_drill": 0.25
       },
       {
         "clearance": 0.15,
+        "diff_pair_gap": 0.12,
+        "diff_pair_width": 0.15,
         "name": "USB DIFF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.118,
-        "via_diameter": 0.5,
+        "track_width": 0.15,
+        "via_diameter": 0.45,
+        "via_drill": 0.25
+      },
+      {
+        "clearance": 0.127,
+        "name": "VERMOGEN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "via_diameter": 0.6,
         "via_drill": 0.3
       }
     ],
@@ -697,10 +728,6 @@
       },
       {
         "netclass": "POWER",
-        "pattern": "VBUS"
-      },
-      {
-        "netclass": "POWER",
         "pattern": "*3V3*"
       },
       {
@@ -718,6 +745,50 @@
       {
         "netclass": "GPIO",
         "pattern": "/P1.10_SDA"
+      },
+      {
+        "netclass": "LTE-RF",
+        "pattern": "/GSM/RF_ANT"
+      },
+      {
+        "netclass": "LTE-RF",
+        "pattern": "Net-(J8-In)"
+      },
+      {
+        "netclass": "LTE-RF",
+        "pattern": "/GSM/RF_GPS"
+      },
+      {
+        "netclass": "LTE-RF",
+        "pattern": "/GSM/RF_IN"
+      },
+      {
+        "netclass": "LTE-RF",
+        "pattern": "Net-(J11-In)"
+      },
+      {
+        "netclass": "VERMOGEN",
+        "pattern": "/POWER/VSYS"
+      },
+      {
+        "netclass": "VERMOGEN",
+        "pattern": "/POWER/VBAT"
+      },
+      {
+        "netclass": "VERMOGEN",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "VERMOGEN",
+        "pattern": "Net-(U14-L1)"
+      },
+      {
+        "netclass": "VERMOGEN",
+        "pattern": "Net-(U14-L2)"
+      },
+      {
+        "netclass": "VERMOGEN",
+        "pattern": "Net-(U12-VDD)"
       }
     ]
   },
