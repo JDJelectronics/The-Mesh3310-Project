@@ -23,7 +23,7 @@ The Nokia 3310 is famous for its durability, tactile keypad and ergonomic design
 | Power | TI BQ24074 charger + TPS63031 buck-boost, original 3310 battery contacts |
 | Charging / USB | Through the original bottom connector (USB data to the nRF52840) |
 | Display / input | Original PCD8544 monochrome LCD, full keypad with backlight, side power button |
-| Audio | MAX98357A amplifier for the speaker, plus the original earpiece, microphone, buzzer and vibration motor contacts |
+| Audio | MAX98357A amplifier for the speaker, microphone, buzzer and vibration motor contacts |
 | Storage | 2 × 16 Mbit flash (MX25R1635F), one for each Nordic chip |
 | Firmware | Built to run Meshtastic and MeshCore |
 
@@ -58,7 +58,7 @@ We are actively looking for contributors. Your input can directly shape the hard
 ## 💬 Community & Contributing
 Most of the coordination happens on Discord.
 
-Join our Discord: https://discord.gg/uTabwbkp
+Join our Discord: https://discord.gg/E6Sk9hmUE
 
 ### Concept images
 <img width="343" height="823" alt="Schermafbeelding 2026-02-24 191950" src="https://github.com/user-attachments/assets/072e3358-aee3-4302-a7f2-4839f2a16c7a" />
