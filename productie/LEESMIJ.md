@@ -1,21 +1,20 @@
-# Mesh3310 — productie-opmerkingen (rev. A, 29-09-2026)
+# Mesh3310 — productie-opmerkingen (rev. B, 18-10-2026: 4 lagen, 1,0 mm)
 
 ## Bestellen bij JLCPCB
-- **6 lagen, opbouw JLC06161H-3313**, 1,6 mm, ENIG.
+- **4 lagen, 1,0 mm** (de behuizing van de 3310 laat niet meer toe), ENIG. JLC-opbouw met 3313-prepreg (JLC04101H-3313); in het bord staat 0,0994 mm prepreg / 0,68 mm core / 0,0994 mm prepreg = 0,9992 mm. Controleer bij het bestellen dat de gekozen JLC-opbouw 0,0994 mm (3313) onder de buitenlagen heeft; daar zijn de impedanties op gebaseerd.
   | Laag | Functie |
   |---|---|
   | F.Cu | onderdelen, RF (50 Ω CPWG: 0,14 mm spoor, 0,30 mm spleet) |
   | In1 | doorlopend GND (referentie RF, 0,0994 mm onder F.Cu) |
-  | In2 | signalen |
-  | In3 | doorlopend +3V3-vlak |
-  | In4 | signalen |
-  | B.Cu | toetsenbord, displayconnector, GND-vulling |
+  | In2 | +3V3-vlak (zone P3V3_IN2) met signalen; rond de nRF52840 extra 3V3-sporen zodat elke 3V3-via zeker aan het vlak hangt |
+  | B.Cu | toetsenbord, displayconnector, signalen, GND-vulling |
+- Rev. A was 6 lagen / 1,6 mm (JLC06161H-3313) en paste niet in de behuizing. Bij de omzetting zijn de signalen van In3/In4 rond de nRF52840 opnieuw gelegd op F.Cu/In2/B.Cu; RF-, USB-, QSPI-, kristal- en voedingssporen zijn ongewijzigd.
 - **Impedantiecontrole** aanvragen: 50 Ω enkelzijdig op F.Cu (ref. In1), 90 Ω differentieel USB (0,15/0,12 mm).
 - **Via-in-pad gevuld en afgedekt (POFV/epoxy + cap)** is nodig: via's in de toets-middenpads (contactvlak onder de rubberen dome), in binnenste nRF52840-pads (aQFN-73) en in enkele kleine GND-pads.
-- Kleinste maten: spoor/ruimte 0,10 mm (aQFN-uitlopen, enkele segmenten), via 0,30/0,15 mm (14 stuks), meestal 0,45/0,25 mm.
+- Kleinste maten: spoor/ruimte 0,10 mm (aQFN-uitlopen, enkele segmenten), via 0,30/0,15 mm (14 stuks), meestal 0,45/0,25 mm. Opnieuw gelegde signalen: 0,15 mm (aansluitstukjes op bestaande 0,127 mm-sporen even smal), via's 0,45/0,25 mm.
 
 ## Bestanden
-- `gerber/` — 13 lagen + PTH/NPTH-boorbestanden + boorkaart + job-bestand
+- `gerber/` — 11 lagen + PTH/NPTH-boorbestanden + boorkaart + job-bestand (rev. B, 4 lagen)
 - `Mesh3310-positie.csv` — positiebestand (zonder DNP)
 - `Mesh3310-stuklijst.csv` — stuklijst in JLC-formaat (Comment, Designator, Footprint, LCSC), zonder DNP
 
@@ -30,7 +29,8 @@ Opnieuw maken: exporteer vanuit KiCad 9 (Plot + Drill Files, Position Files en B
 - Datasheets van alle actieve en bijzondere onderdelen: `Kicad_Mesh3310/datasheets/` (van de nRF9151 alleen de productbrief; de volledige specificatie staat op docs.nordicsemi.com).
 
 ## Controle
-- ERC: 0 fouten. DRC: 0 fouten, 0 onverbonden, pariteit schema ↔ bord 0.
+- Rev. B (4 lagen): DRC 0 onverbonden en precies dezelfde meldingen als rev. A (alleen de bewuste uitzonderingen hieronder, zeefdruk en veldverschillen schema ↔ bord); geen koper-, afstands- of boorfouten. GND op In1 één geheel, +3V3 op In2 één geheel.
+- Rev. A: ERC 0 fouten. DRC: 0 fouten, 0 onverbonden, pariteit schema ↔ bord 0.
 - Nagelopen: voedings- en signaalverbindingen in de netlijst, behuizingsonderdelen en bordrand ongewijzigd t.o.v. main, GND- en +3V3-vlak doorlopend, RF-sporen zonder via's, voedingssporen ≥ 0,4 mm.
 - Bewuste uitzonderingen (in `Mesh3310.kicad_dru` / projectbestand, met toelichting):
   ANT1-antennepatroon (netloos koper), BLE-antennepin nRF52840 (0,15 mm bij de pin),
