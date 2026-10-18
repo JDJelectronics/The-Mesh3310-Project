@@ -6,12 +6,12 @@
   |---|---|
   | F.Cu | onderdelen, RF (50 Ω CPWG: 0,14 mm spoor, 0,30 mm spleet) |
   | In1 | doorlopend GND (referentie RF, 0,0994 mm onder F.Cu) |
-  | In2 | +3V3-vlak (zone P3V3_IN2) met signalen; rond de nRF52840 extra 3V3-sporen zodat elke 3V3-via zeker aan het vlak hangt |
+  | In2 | +3V3-vlak (zone P3V3_IN2) met de signalen die al op In2 lagen en de netten die van In4 kwamen; het vlak is één geheel |
   | B.Cu | toetsenbord, displayconnector, signalen, GND-vulling |
-- Rev. A was 6 lagen / 1,6 mm (JLC06161H-3313) en paste niet in de behuizing. Bij de omzetting zijn de signalen van In3/In4 rond de nRF52840 opnieuw gelegd op F.Cu/In2/B.Cu; RF-, USB-, QSPI-, kristal- en voedingssporen zijn ongewijzigd.
+- Rev. A was 6 lagen / 1,6 mm (JLC06161H-3313) en paste niet in de behuizing. De 4-laagsversie is zo dicht mogelijk bij rev. A gehouden: 1574 van de 1741 sporen zijn ongewijzigd, F.Cu en B.Cu zijn vrijwel gelijk. Het 3V3-vlak ging van In3 naar In2. Alleen rond de nRF52840 is opnieuw gelegd: de 6 netten die op In4 lagen (LoRa SCK/MOSI, SWDIO, display SCK en D/C, ROW_3) en de In2-stukken van de netten die daarmee botsten (COL_2, COL_3, GSM_WAKE, PWR_OFF, CHG, BAT_RTC, LORA_MISO, P0.06, MCU_RESETn), recht of onder 45°. RF-, USB-, QSPI-, kristal- en voedingssporen zijn ongewijzigd.
 - **Impedantiecontrole** aanvragen: 50 Ω enkelzijdig op F.Cu (ref. In1), 90 Ω differentieel USB (0,15/0,12 mm).
 - **Via-in-pad gevuld en afgedekt (POFV/epoxy + cap)** is nodig: via's in de toets-middenpads (contactvlak onder de rubberen dome), in binnenste nRF52840-pads (aQFN-73) en in enkele kleine GND-pads.
-- Kleinste maten: spoor/ruimte 0,10 mm (aQFN-uitlopen, enkele segmenten), via 0,30/0,15 mm (14 stuks), meestal 0,45/0,25 mm. Opnieuw gelegde signalen: 0,15 mm (aansluitstukjes op bestaande 0,127 mm-sporen even smal), via's 0,45/0,25 mm.
+- Kleinste maten: spoor/ruimte 0,10 mm (aQFN-uitlopen, enkele segmenten), via 0,30/0,15 mm (14 stuks), meestal 0,45/0,25 mm. Opnieuw gelegde signalen rond de nRF52840: 0,15 mm over de hele lengte; nieuwe netten van rev. D/E: 0,2 mm (VSYS 0,4 mm); nieuwe via's 0,45/0,25 mm.
 
 ## Bestanden
 - `gerber/` — 11 lagen + PTH/NPTH-boorbestanden + boorkaart + job-bestand (rev. E, 4 lagen)
@@ -39,7 +39,7 @@ Opnieuw maken: exporteer vanuit KiCad 9 (Plot + Drill Files, Position Files en B
 - **nRF9151 rechtstreeks op VSYS** (FB1 pin 1 van +3V3 naar VSYS). De nRF9151 werkt op 3,0–5,5 V en VSYS is maximaal 4,4 V. Zo levert de TPS63031 (800 mA buck / 500 mA boost) de LTE-zendpieken niet meer; op 3V3 blijven nRF52840, SX1262, versterker, flash en backlight over.
 - **ENABLE van de nRF9151 op PWR_EN** (R12 van VDD naar de uitgang van U9, die ook de TPS63031 aanzet). Nordic: ENABLE moet boven 0,89 × VDD komen; U9 is CMOS en voedt uit VSYS, dus PWR_EN haalt dat. Staat het toestel uit, dan is de nRF9151 uitgeschakeld (ENABLE en VDD_GPIO laag) en verbruikt hij bijna niets.
 - **EN1 van de lader (U3 pin 6) van VBUS naar VSYS** (OUT, max. 4,4 V). Daarmee kan EN1 niet meer boven de 7 V komen als er een lader met te hoge spanning aan hangt. EN1 hoog / EN2 laag blijft de 500 mA-stand (USB500).
-- Koper: EN1 met een kort spoor rechts langs U3 naar U9 pin 6. Voor dat spoor is de VBUS-doorvoervia rechts van U3 weg (VBUS loopt daar alleen op B.Cu door), en zijn twee GND-vias 0,15 mm opgeschoven. FB1 krijgt VSYS via een 0,3 mm-spoor op B.Cu. PWR_EN loopt over F.Cu/In2 (4 via's) en bewust niet onder L2 door, vanwege de schakelruis op ENABLE. C95 wordt nu rechtstreeks vanaf de VDD-via gevoed.
+- Koper: EN1 met een kort spoor rechts langs U3 naar U9 pin 6. Voor dat spoor is de VBUS-doorvoervia rechts van U3 weg (VBUS loopt daar alleen op B.Cu door), en zijn twee GND-vias 0,15 mm opgeschoven. FB1 krijgt VSYS via een 0,3 mm-spoor op B.Cu. PWR_EN loopt met een paar via's over F.Cu/In2 en bewust niet onder L2 door, vanwege de schakelruis op ENABLE. C95 wordt nu rechtstreeks vanaf de VDD-via gevoed.
 - De opstartvolgorde (VDD_GPIO > 6 ms na ENABLE) is in rev. E opgelost, zie hieronder.
 
 ## Rev. E (aan/uit-knop, opstartvolgorde, buffer)
@@ -53,13 +53,12 @@ Opnieuw maken: exporteer vanuit KiCad 9 (Plot + Drill Files, Position Files en B
 - **C99 47 µF op VSYS** bij FB1/de lader: buffer voor de LTE-zendpieken van de nRF9151. Naast de nRF9151 zelf was geen plek; achter FB1 zit C95 (10 µF).
 - Alle nieuwe onderdelen staan al in de stuklijst (BSS138, BAT60A, 47 µF 0805, 1M, 47k, 100 nF), behalve D18 1N4148WS (C2128, basic) en R51 330k (C270349).
 - Ze staan op F.Cu onder U9/U14 (x 121–139, y 89–95), waar eerst alleen GND-stitching-vias zaten. Tien daarvan zijn weggehaald. **Bouwhoogte** (SOT-23 ~1,1 mm, 0805 ~1,3 mm) daar nog in de behuizing controleren.
-- Via-in-pad (gevuld, POFV): erbij is alleen U9 pin 4 (/OUT); daarnaast was geen ruimte.
+- Er zijn geen nieuwe via's in pads bijgekomen.
 
 ## Controle
-- Rev. E: DRC (met schemapariteit en opnieuw gevulde zones) 0 onverbonden en geen koper- of afstandsfouten; bijgekomen meldingen: veldverschillen (LCSC-veld in de nieuwe footprints), SOT-23 wijkt af van de bibliotheek (zoals Q4) en één zeefdrukoverlap D20/Q8. ERC gelijk aan rev. D. GND op In1 en +3V3 op In2 elk één geheel.
+- Rev. E (opnieuw opgebouwd vanaf rev. A, 18-10-2026): DRC met schemapariteit 0 onverbonden en geen koper-, afstands- of boorfouten, ook zonder de zones opnieuw te vullen (de vulling staat in het bestand). Bijgekomen t.o.v. rev. A: veldverschillen (LCSC-veld in de nieuwe footprints), SOT-23 wijkt af van de bibliotheek (zoals Q4) en één zeefdrukoverlap D20/Q8. ERC gelijk aan rev. D. GND op In1 en +3V3 op In2 elk één geheel.
 - Rev. D: DRC (met schemapariteit en opnieuw gevulde zones) precies gelijk aan rev. C, 0 onverbonden; ERC gelijk aan rev. C. GND op In1 en +3V3 op In2 nog steeds elk één geheel.
 - Rev. C: DRC (met schemapariteit en opnieuw gevulde zones) precies gelijk aan rev. B, 0 onverbonden; ERC gelijk aan rev. B (1 fout: los label `MCU_RESETn` op het hoofdblad, plus waarschuwingen over bibliotheeksymbolen).
-- Rev. B (4 lagen): DRC 0 onverbonden en precies dezelfde meldingen als rev. A (alleen de bewuste uitzonderingen hieronder, zeefdruk en veldverschillen schema ↔ bord); geen koper-, afstands- of boorfouten. GND op In1 één geheel, +3V3 op In2 één geheel.
 - Rev. A: DRC 0 fouten, 0 onverbonden, pariteit schema ↔ bord 0.
 - Nagelopen: voedings- en signaalverbindingen in de netlijst, behuizingsonderdelen en bordrand ongewijzigd t.o.v. main, GND- en +3V3-vlak doorlopend, RF-sporen zonder via's, voedingssporen ≥ 0,4 mm.
 - Bewuste uitzonderingen (in `Mesh3310.kicad_dru` / projectbestand, met toelichting):
