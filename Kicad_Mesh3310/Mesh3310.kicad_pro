@@ -768,7 +768,7 @@
       },
       {
         "netclass": "VERMOGEN",
-        "pattern": "/POWER/VSYS"
+        "pattern": "VSYS"
       },
       {
         "netclass": "VERMOGEN",

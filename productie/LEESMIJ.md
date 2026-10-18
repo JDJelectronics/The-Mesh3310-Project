@@ -1,4 +1,4 @@
-# Mesh3310 — productie-opmerkingen (rev. C, 18-10-2026: 4 lagen, 1,0 mm)
+# Mesh3310 — productie-opmerkingen (rev. E, 18-10-2026: 4 lagen, 1,0 mm)
 
 ## Bestellen bij JLCPCB
 - **4 lagen, 1,0 mm** (de behuizing van de 3310 laat niet meer toe), ENIG. JLC-opbouw met 3313-prepreg (JLC04101H-3313); in het bord staat 0,0994 mm prepreg / 0,68 mm core / 0,0994 mm prepreg = 0,9992 mm. Controleer bij het bestellen dat de gekozen JLC-opbouw 0,0994 mm (3313) onder de buitenlagen heeft; daar zijn de impedanties op gebaseerd.
@@ -14,7 +14,7 @@
 - Kleinste maten: spoor/ruimte 0,10 mm (aQFN-uitlopen, enkele segmenten), via 0,30/0,15 mm (14 stuks), meestal 0,45/0,25 mm. Opnieuw gelegde signalen: 0,15 mm (aansluitstukjes op bestaande 0,127 mm-sporen even smal), via's 0,45/0,25 mm.
 
 ## Bestanden
-- `gerber/` — 11 lagen + PTH/NPTH-boorbestanden + boorkaart + job-bestand (rev. C, 4 lagen)
+- `gerber/` — 11 lagen + PTH/NPTH-boorbestanden + boorkaart + job-bestand (rev. E, 4 lagen)
 - `Mesh3310-positie.csv` — positiebestand (zonder DNP)
 - `Mesh3310-stuklijst.csv` — stuklijst in JLC-formaat (Comment, Designator, Footprint, LCSC), zonder DNP
 
@@ -35,7 +35,29 @@ Opnieuw maken: exporteer vanuit KiCad 9 (Plot + Drill Files, Position Files en B
 - **Batterijdeler R59/R60 1 MΩ (C473482)** in plaats van 47k: lekstroom van ~45 µA naar ~2 µA, ook als het toestel uit staat. C27 (100 nF) aan de ADC-ingang levert de lading voor de meting, dus de hogere bronweerstand (500k) geeft geen meetfout van betekenis.
 - **TMR (U3 pin 14) los** in plaats van aan GND: de veiligheidstimers van de lader staan nu aan met de standaardwaarden (voorladen 30 min, laden 5 uur). Aan GND stonden ze uit.
 
+## Rev. D (voeding nRF9151 en lader)
+- **nRF9151 rechtstreeks op VSYS** (FB1 pin 1 van +3V3 naar VSYS). De nRF9151 werkt op 3,0–5,5 V en VSYS is maximaal 4,4 V. Zo levert de TPS63031 (800 mA buck / 500 mA boost) de LTE-zendpieken niet meer; op 3V3 blijven nRF52840, SX1262, versterker, flash en backlight over.
+- **ENABLE van de nRF9151 op PWR_EN** (R12 van VDD naar de uitgang van U9, die ook de TPS63031 aanzet). Nordic: ENABLE moet boven 0,89 × VDD komen; U9 is CMOS en voedt uit VSYS, dus PWR_EN haalt dat. Staat het toestel uit, dan is de nRF9151 uitgeschakeld (ENABLE en VDD_GPIO laag) en verbruikt hij bijna niets.
+- **EN1 van de lader (U3 pin 6) van VBUS naar VSYS** (OUT, max. 4,4 V). Daarmee kan EN1 niet meer boven de 7 V komen als er een lader met te hoge spanning aan hangt. EN1 hoog / EN2 laag blijft de 500 mA-stand (USB500).
+- Koper: EN1 met een kort spoor rechts langs U3 naar U9 pin 6. Voor dat spoor is de VBUS-doorvoervia rechts van U3 weg (VBUS loopt daar alleen op B.Cu door), en zijn twee GND-vias 0,15 mm opgeschoven. FB1 krijgt VSYS via een 0,3 mm-spoor op B.Cu. PWR_EN loopt over F.Cu/In2 (4 via's) en bewust niet onder L2 door, vanwege de schakelruis op ENABLE. C95 wordt nu rechtstreeks vanaf de VDD-via gevoed.
+- De opstartvolgorde (VDD_GPIO > 6 ms na ENABLE) is in rev. E opgelost, zie hieronder.
+
+## Rev. E (aan/uit-knop, opstartvolgorde, buffer)
+- **Aan/uit-knop SW18:**
+  - **Uit:** een korte druk zet het toestel aan (MAX16054, zoals voorheen).
+  - **Aan:** Q8 (BSS138, gate op /OUT van U9) koppelt de knop los van U9, zodat een druk de voeding niet meer omzet. De firmware leest de knop via D18 (1N4148WS) op **P0.26**: laag = ingedrukt; zet de interne pull-up aan. Korte druk = standby (of wat de firmware wil); netjes uitzetten = **P0.02 hoog** (CLR).
+  - **Lang ingedrukt (~3 s, met tolerantie 2–5 s):** C97+C98 (2× 47 µF) laden via R63 (47k) uit 3V3, en D19 (BAT60A) trekt CLR boven de drempel. De voeding gaat dan hard uit, ook als de firmware hangt. Q9 (BSS138) maakt het tijdnet direct leeg zodra je loslaat, dus korte drukken tellen niet op. R62 (1M) houdt het knopknooppunt hoog voordat de firmware P0.26 heeft ingesteld; D18 voorkomt dat P0.26 terugvoeding krijgt als het toestel uit staat.
+  - R51 (pull-down op CLR) is 330k geworden (was 100k), anders haalt het tijdnet de CLR-drempel niet.
+  - **Firmware:** P0.02 nooit laag sturen. Laat hem ingang/los en maak hem alleen hoog om uit te zetten; een laag gestuurde P0.02 blokkeert de lange druk. Houd je de knop na het aanzetten langer dan ~3 s vast, dan gaat het toestel weer uit.
+- **3V3 pas na ENABLE van de nRF9151:** R64 (1M) + C100 (100 nF) vertragen de EN van U14 met 12–51 ms (de EN-drempel ligt tussen 0,4 en 1,2 V). Nordic vraagt VDD_GPIO > 6 ms na ENABLE en VDD. D20 (BAT60A) maakt C100 bij uitzetten meteen leeg, zodat 3V3 samen met ENABLE wegvalt.
+- **C99 47 µF op VSYS** bij FB1/de lader: buffer voor de LTE-zendpieken van de nRF9151. Naast de nRF9151 zelf was geen plek; achter FB1 zit C95 (10 µF).
+- Alle nieuwe onderdelen staan al in de stuklijst (BSS138, BAT60A, 47 µF 0805, 1M, 47k, 100 nF), behalve D18 1N4148WS (C2128, basic) en R51 330k (C270349).
+- Ze staan op F.Cu onder U9/U14 (x 121–139, y 89–95), waar eerst alleen GND-stitching-vias zaten. Tien daarvan zijn weggehaald. **Bouwhoogte** (SOT-23 ~1,1 mm, 0805 ~1,3 mm) daar nog in de behuizing controleren.
+- Via-in-pad (gevuld, POFV): erbij is alleen U9 pin 4 (/OUT); daarnaast was geen ruimte.
+
 ## Controle
+- Rev. E: DRC (met schemapariteit en opnieuw gevulde zones) 0 onverbonden en geen koper- of afstandsfouten; bijgekomen meldingen: veldverschillen (LCSC-veld in de nieuwe footprints), SOT-23 wijkt af van de bibliotheek (zoals Q4) en één zeefdrukoverlap D20/Q8. ERC gelijk aan rev. D. GND op In1 en +3V3 op In2 elk één geheel.
+- Rev. D: DRC (met schemapariteit en opnieuw gevulde zones) precies gelijk aan rev. C, 0 onverbonden; ERC gelijk aan rev. C. GND op In1 en +3V3 op In2 nog steeds elk één geheel.
 - Rev. C: DRC (met schemapariteit en opnieuw gevulde zones) precies gelijk aan rev. B, 0 onverbonden; ERC gelijk aan rev. B (1 fout: los label `MCU_RESETn` op het hoofdblad, plus waarschuwingen over bibliotheeksymbolen).
 - Rev. B (4 lagen): DRC 0 onverbonden en precies dezelfde meldingen als rev. A (alleen de bewuste uitzonderingen hieronder, zeefdruk en veldverschillen schema ↔ bord); geen koper-, afstands- of boorfouten. GND op In1 één geheel, +3V3 op In2 één geheel.
 - Rev. A: DRC 0 fouten, 0 onverbonden, pariteit schema ↔ bord 0.
@@ -49,10 +71,10 @@ Opnieuw maken: exporteer vanuit KiCad 9 (Plot + Drill Files, Position Files en B
 - nRF9151: R10/R28 (0R naar de gedeelde SWD-lijnen) zijn standaard **niet geplaatst**. Twee SWD-chips op dezelfde lijnen werkt niet; de nRF9151 programmeren via de pads van R10/R28 (kant U12) of de 0R's tijdelijk plaatsen.
 
 ## Nog te doen / aandachtspunten
-- **EN1 van de lader (U3) hangt aan VBUS.** EN1 mag maximaal 7 V hebben, de lader werkt tot 10,5 V. Met een gewone 5 V-lader is dat geen probleem, wel met een lader die meer geeft. Beter: EN1 aan OUT (VSYS, max. 4,4 V); dat vraagt een nieuw spoortje naast U3.
-- **Voeding:** de TPS63031 levert 800 mA (buck) / 500 mA (boost, lege accu). LTE-zendpieken, LoRa +22 dBm, de versterker en de backlight tegelijk kunnen de 3V3 laten zakken; in de firmware niet tegelijk laten pieken.
-- **Aan/uit-knop SW18** schakelt via de MAX16054 direct de voeding; de firmware ziet de knop niet en kan niet netjes afsluiten (P0.02 kan wel zelf uitzetten).
-- **BLE-antenne:** RF3 (U.FL) en ANT2 zitten zonder keuzeweerstand tegelijk op de lijn; bij afstemmen kiezen.
+- **BLE-antenne kiezen:** RF3 (U.FL) en ANT2 hangen op hetzelfde knooppunt achter het matchnetwerk. Chipantenne: geen kabel op RF3. Externe antenne via RF3: L4 (1,5 nH, in serie naar ANT2) niet plaatsen, anders deelt het signaal zich over beide.
+- **VDD van de nRF9151:** 10 µF (C95) direct achter FB1 en 47 µF (C99) op VSYS ervoor. Bij spanningsdips onder LTE-zenden eerst hier meten.
+- **Netnaam P0.26** heet nog `P0.26_BAT_RTC` (vroeger knoopcel); het is nu de knopingang.
+- **USB:** J4 zijn de pads van de originele onderconnector; er zitten geen CC-weerstanden (5k1) op het bord. Komt er een USB-C-verloopstuk aan, dan moeten die daarin, anders levert een USB-C-lader geen 5 V.
 - **RF afstemmen** met de echte antennes en kabels: LTE-pi-netwerk R61/C93/C94 (shunts nu DNP), LoRa en BLE volgens het oorspronkelijke ontwerp.
 - **LTE-antenne**: plak-flexantenne via U.FL J8 (bv. Taoglas FXUB63); GNSS-antenne via U.FL J11.
 - **Montagegat H6** ligt in de LoRa-antennezone en is aan GND gehangen (kort spoor langs de zonerand); eventueel los laten na meting.
