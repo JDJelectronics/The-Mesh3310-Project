@@ -3009,6 +3009,10 @@
 		(uuid "fdd85a53-b107-4e5b-bfdd-7d708c3415f7")
 	)
 	(no_connect
+		(at 62.23 87.63)
+		(uuid "3a716a75-45e2-47e8-8bc7-efc00900e270")
+	)
+	(no_connect
 		(at 167.64 88.9)
 		(uuid "13bd03be-610d-42a3-a8cc-d2356f196365")
 	)
@@ -3097,16 +3101,6 @@
 			(type default)
 		)
 		(uuid "21ea991d-1766-42a0-b414-d3b1688396c6")
-	)
-	(wire
-		(pts
-			(xy 43.18 87.63) (xy 62.23 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22fe0a80-d98a-4116-acd6-149a00315885")
 	)
 	(wire
 		(pts
@@ -3477,16 +3471,6 @@
 			(type default)
 		)
 		(uuid "aa67c3f4-7f95-4432-bf71-59d7f097c625")
-	)
-	(wire
-		(pts
-			(xy 43.18 87.63) (xy 43.18 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b03192a9-f04f-4726-9cc5-e8cfd0105fa5")
 	)
 	(wire
 		(pts
@@ -4349,7 +4333,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "47k"
+		(property "Value" "1M"
 			(at 107.696 108.204 90)
 			(effects
 				(font
@@ -4367,7 +4351,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C304544"
+		(property "LCSC" "C473482"
 			(at 103.632 106.68 90)
 			(effects
 				(font
@@ -5083,7 +5067,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3ec92411-27b9-4a76-af48-db93ebd1b34f")
 		(property "Reference" "BT2"
@@ -5159,72 +5143,6 @@
 			(project "Mesh3310"
 				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
 					(reference "BT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 43.18 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "414b969c-01a9-4432-ba79-0a06ca9cc1fb")
-		(property "Reference" "#PWR077"
-			(at 43.18 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 43.18 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e2c6cc7c-52d6-427d-871a-3e6dcef3e239")
-		)
-		(instances
-			(project "Mesh3310"
-				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/cbcf5f36-d6bc-4a44-8f70-36ed899140c5"
-					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -5554,7 +5472,7 @@
 				)
 			)
 		)
-		(property "Value" "47k"
+		(property "Value" "1M"
 			(at 102.87 96.52 90)
 			(effects
 				(font
@@ -5571,7 +5489,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C304544"
+		(property "LCSC" "C473482"
 			(at 107.188 96.52 90)
 			(effects
 				(font
@@ -6651,9 +6569,9 @@
 		(at 241.3 80.01 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a4f7f175-9f50-4de7-95e4-af1f0cc672b6")
 		(property "Reference" "D17"
@@ -6812,9 +6730,9 @@
 		(at 251.46 80.01 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a7541f58-4da8-4227-8eba-0919b8988a3d")
 		(property "Reference" "R52"

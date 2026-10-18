@@ -5965,7 +5965,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:C_Small")
 		(at 232.41 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5974,7 +5974,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "600bc7be-9636-4c58-acdc-fb016c511f86")
-		(property "Reference" "R6"
+		(property "Reference" "C96"
 			(at 232.41 85.09 90)
 			(effects
 				(font
@@ -5982,7 +5982,7 @@
 				)
 			)
 		)
-		(property "Value" "0R"
+		(property "Value" "56pF"
 			(at 232.41 87.63 90)
 			(effects
 				(font
@@ -5990,7 +5990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 232.41 90.17 0)
 			(effects
 				(font
@@ -5999,7 +5999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/25819-0402WGF1000TCE/C25076"
+		(property "Datasheet" ""
 			(at 232.41 90.17 0)
 			(effects
 				(font
@@ -6008,7 +6008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 232.41 90.17 0)
 			(effects
 				(font
@@ -6017,7 +6017,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C473473"
+		(property "LCSC" "C2183491"
 			(at 232.41 90.17 90)
 			(effects
 				(font
@@ -6089,7 +6089,7 @@
 		(instances
 			(project "Mesh3310"
 				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/d4d7259f-52be-4eaa-97bd-35f544c05202"
-					(reference "R6")
+					(reference "C96")
 					(unit 1)
 				)
 			)
@@ -6562,9 +6562,9 @@
 		(at 76.2 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "80364a52-679c-44b0-b515-084dc47ed006")
 		(property "Reference" "C70"
@@ -8742,9 +8742,9 @@
 		(at 102.87 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e7e8f40f-d505-469d-aafd-3f0c4d939c52")
 		(property "Reference" "C71"
