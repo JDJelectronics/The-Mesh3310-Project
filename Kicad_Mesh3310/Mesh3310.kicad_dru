@@ -28,3 +28,9 @@
 (rule "testmal_testpunten"
   (constraint courtyard_clearance (min -2mm))
   (condition "A.Reference == 'TP*' && B.Reference == 'TP*'"))
+
+# L16 (47 nH PA-choke van de SX1262) is 0402 vanwege de stroom (210 mA); tussen de pads en de 0201-buren zit >= 0,25 mm koper,
+# alleen de courtyard-marges overlappen.
+(rule "l16_0402_courtyard"
+  (constraint courtyard_clearance (min -0.3mm))
+  (condition "A.Reference == 'L16' || B.Reference == 'L16'"))

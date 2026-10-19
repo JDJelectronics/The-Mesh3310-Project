@@ -7,7 +7,7 @@
 	(title_block
 		(title "Mainboard replacement for Nokia 3310")
 		(date "29-12-2025")
-		(rev "Rev A")
+		(rev "Rev G")
 		(company "Mesh3310")
 		(comment 1 "JDJ electronics")
 	)
@@ -3119,7 +3119,7 @@
 		)
 		(uuid "5a32a44b-9ac0-4c08-a518-ed3a82250eea")
 	)
-	(label "P0.26_BAT_RTC"
+	(label "P0.26_PWR_KNOP"
 		(at 33.02 93.98 0)
 		(effects
 			(font
@@ -3392,7 +3392,7 @@
 			)
 		)
 	)
-	(label "P0.26_BAT_RTC"
+	(label "P0.26_PWR_KNOP"
 		(at 106.68 170.18 180)
 		(effects
 			(font
@@ -6101,7 +6101,7 @@
 				(justify right)
 			)
 		)
-		(pin "RTC_BATT" output
+		(pin "PWR_KNOP" output
 			(at 86.36 170.18 0)
 			(uuid "d619ec92-648f-430c-a681-c7815cf0d670")
 			(effects

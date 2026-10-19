@@ -27,7 +27,7 @@ The Nokia 3310 is famous for its durability, tactile keypad and ergonomic design
 | Storage | 2 × 16 Mbit flash (MX25R1635F), one for each Nordic chip |
 | Firmware | Built to run Meshtastic and MeshCore |
 
-## 🛠 Project Status: Rev. E layout complete 🏗️
+## 🛠 Project Status: Rev. G layout complete 🏗️
 - The schematic is complete and passes ERC.
 - The **4-layer PCB** (1.0 mm, so it fits the original housing; JLCPCB 4-layer stackup with 3313 prepreg) is fully routed, passes DRC and matches the schematic.
 - Board outline, mounting holes, battery contacts, display, SIM, speakers, keypad and backlight LEDs match the original Nokia 3310 housing.

@@ -7,7 +7,7 @@
 	(title_block
 		(title "Mainboard replacement for Nokia 3310")
 		(date "29-12-2025")
-		(rev "Rev A")
+		(rev "Rev G")
 		(company "Mesh3310")
 		(comment 1 "JDJ electronics")
 	)
@@ -4387,7 +4387,7 @@
 				)
 			)
 		)
-		(property "Value" "3pF"
+		(property "Value" "3.3pF"
 			(at 166.3763 68.58 90)
 			(effects
 				(font
@@ -4422,7 +4422,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C501815"
+		(property "LCSC" "C124777"
 			(at 166.37 72.39 90)
 			(effects
 				(font
@@ -7111,7 +7111,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 151.13 73.66 0)
 			(effects
 				(font
@@ -7138,7 +7138,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C46607399"
+		(property "LCSC" "C192855"
 			(at 151.13 73.66 0)
 			(effects
 				(font
@@ -9007,9 +9007,9 @@
 		(at 238.76 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f555cce6-04ec-4302-9941-3e0399051870")
 		(property "Reference" "RF4"

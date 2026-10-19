@@ -7,7 +7,7 @@
 	(title_block
 		(title "Mainboard replacement for Nokia 3310")
 		(date "29-12-2025")
-		(rev "Rev A")
+		(rev "Rev G")
 		(company "Mesh3310")
 		(comment 1 "JDJ electronics")
 	)
@@ -5377,6 +5377,16 @@
 			)
 		)
 	)
+	(label "~{DISP_RST}"
+		(at 111.76 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "62031cc3-9316-4017-8ab0-997582d62785")
+	)
 	(hierarchical_label "I2S_LRCK"
 		(shape bidirectional)
 		(at 146.05 118.11 180)
@@ -5608,7 +5618,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BSS138"
+		(property "Value" "AO3400A"
 			(at 256.54 58.42 0)
 			(effects
 				(font
@@ -5628,7 +5638,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C518792"
+		(property "LCSC" "C20917"
 			(at 256.54 56.515 0)
 			(effects
 				(font
@@ -6208,7 +6218,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "220k"
+		(property "Value" "1M"
 			(at 245.11 134.6199 0)
 			(effects
 				(font
@@ -6226,7 +6236,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C49653410"
+		(property "LCSC" "C473482"
 			(at 244.348 133.35 90)
 			(effects
 				(font
@@ -8300,6 +8310,169 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 111.76 55.88 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ced367e-e65e-4e89-ad82-001ea406f326")
+		(property "Reference" "R65"
+			(at 114.26 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 114.26 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 113.54 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3152012"
+			(at 113.54 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 111.76 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "603-RC0402JR-13100KL"
+			(at 111.76 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "603-RC0402JR-13100KL"
+			(at 111.76 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f7717946-34a8-4395-871c-0f5f52a51f21")
+		)
+		(pin "1"
+			(uuid "67b2001a-ce62-406f-8f4e-316b0250e09b")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/56951be9-e7d0-42f1-a860-fb701fde1659"
+					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "858d46b3-e6f0-41bc-a718-f27e0e097234")
+		(property "Reference" "#PWR0141"
+			(at 111.76 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "153779b5-e7dc-4895-8d10-61a5bd372207")
+		)
+		(instances
+			(project "Mesh3310"
+				(path "/8d65c5ef-7a02-4454-aee5-ab9c49e4aeab/56951be9-e7d0-42f1-a860-fb701fde1659"
+					(reference "#PWR0141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 156.21 43.18 0)
 		(unit 1)
@@ -8632,7 +8805,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BAT60A"
+		(property "Value" "1N4148WS"
 			(at 263.652 44.0746 90)
 			(effects
 				(font
@@ -8650,7 +8823,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5355496"
+		(property "LCSC" "C2128"
 			(at 257.175 43.18 0)
 			(effects
 				(font
@@ -10620,7 +10793,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BAT60A"
+		(property "Value" "1N4148WS"
 			(at 229.362 44.0746 90)
 			(effects
 				(font
@@ -10638,7 +10811,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5355496"
+		(property "LCSC" "C2128"
 			(at 222.885 43.18 0)
 			(effects
 				(font
@@ -10974,7 +11147,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BSS138"
+		(property "Value" "AO3400A"
 			(at 222.25 58.42 0)
 			(effects
 				(font
@@ -10994,7 +11167,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C518792"
+		(property "LCSC" "C20917"
 			(at 222.25 56.515 0)
 			(effects
 				(font

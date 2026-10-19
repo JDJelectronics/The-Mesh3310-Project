@@ -7,7 +7,7 @@
 	(title_block
 		(title "Mainboard replacement for Nokia 3310")
 		(date "29-12-2025")
-		(rev "Rev A")
+		(rev "Rev G")
 		(company "Mesh3310")
 		(comment 1 "JDJ electronics")
 	)
@@ -14242,7 +14242,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.2uF"
+		(property "Value" "4.7uF"
 			(at 168.656 60.96 90)
 			(effects
 				(font
@@ -14278,7 +14278,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C107370"
+		(property "LCSC" "C23733"
 			(at 167.64 59.69 0)
 			(effects
 				(font

@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "10.0.6"
     },
-    "CreationDate": "2026-10-18T21:41:09+02:00"
+    "CreationDate": "2026-10-18T23:08:16+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "Mesh3310",
       "GUID": "4d657368-3333-4313-902e-6b696361645f",
-      "Revision": "A"
+      "Revision": "G"
     },
     "Size": {
       "X": 41.65,
