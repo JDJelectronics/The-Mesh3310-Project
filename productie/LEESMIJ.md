@@ -17,6 +17,7 @@
 - `gerber/` — 11 lagen + PTH/NPTH-boorbestanden + boorkaart + job-bestand (rev. G, 4 lagen)
 - `Mesh3310-positie.csv` — positiebestand (zonder DNP)
 - `Mesh3310-stuklijst.csv` — stuklijst in JLC-formaat (Comment, Designator, Footprint, LCSC), zonder DNP
+- `Mesh3310-JLC-stuklijst.csv` + `Mesh3310-JLC-positie.csv` — deze uploaden bij JLC. Regels met hetzelfde LCSC-nummer zijn samengevoegd (anders vinkt JLC ze uit) en de positie staat in het JLC-formaat (Designator, Mid X, Mid Y, Layer, Rotation); het KiCad-positiebestand wordt geweigerd. Na het uploaden de LEDs (D5–D13) en de 0 Ω-groep zelf aanvinken.
 - `variant-UFL/` — zelfde gerbers, LoRa naar U.FL in plaats van de chipantenne (RF4 erop, L19 en C87 eraf); eigen stuklijst en positiebestand
 
 Opnieuw maken: exporteer vanuit KiCad 9 (Plot + Drill Files, Position Files en Bill of Materials).
@@ -46,7 +47,7 @@ Volledige controle van schema en bord (voeding, beide Nordic-chips, LoRa/RF, int
 - **C12 niet plaatsen** (100 nF op COEX0): Nordic staat op COEX0 maximaal 50 pF toe. **R14 100k** (was 1M): Nordic schrijft ~100 kΩ pull-down voor op COEX.
 - **C47 4,7 µF** (was 2,2 µF) op DECUSB: de nRF52840 eist 2,35–5,5 µF.
 - **L16 47 nH 0402 Murata LQW15AN47NJ00D** (C192855, 210 mA; was 0201, 100 mA): de PA van de SX1262 trekt ~118 mA door deze choke bij +22 dBm. De courtyard overlapt die van de 0201-buren (pads ≥ 0,25 mm vrij); uitzondering in `Mesh3310.kicad_dru`.
-- **C81 3,3 pF** (C124777, ±0,1 pF; was 3 pF): het harmonische filter L17/C81 lag op 2×915 MHz, nu op 2×868 MHz (de antenne is 868 MHz). Nog meten.
+- **C81 3,3 pF** (C161425, ±0,1 pF; was 3 pF): het harmonische filter L17/C81 lag op 2×915 MHz, nu op 2×868 MHz (de antenne is 868 MHz). Nog meten.
 - **C2 (100 nF), C26 (15 pF) en C28 (47 µF) van +3V3 naar de VDD van de nRF9151** (net nu `/GSM/VDD_9151`): restanten van toen VDD aan 3V3 hing. C2/C26 zitten direct onder pin 14, C28 3 mm verder.
 - **C91 10 µF** (was 4,7 µF) op BAT van de lader (na DC-bias was er ~2,5 µF over; TI vraagt ≥ 4,7 µF).
 - **R65 100k pull-down op display-RES**: de PCD8544 moet bij opkomen van VDD binnen 30 ms gereset worden; zonder pull-down zweeft RES tijdens de boot.
@@ -79,7 +80,7 @@ Volledige controle van schema en bord (voeding, beide Nordic-chips, LoRa/RF, int
   - (Sinds rev. G vervangen door U15, zie hierboven.) **Firmware (rev. E/F):** P0.02 nooit laag sturen. Laat hem ingang/los en maak hem alleen hoog om uit te zetten; een laag gestuurde P0.02 blokkeert de lange druk. Houd je de knop na het aanzetten langer dan ~3 s vast, dan gaat het toestel weer uit.
 - **3V3 pas na ENABLE van de nRF9151:** R64 + C100 vertragen de EN van U14 (sinds rev. F 100k / 1 µF, ~10–50 ms; de EN-drempel ligt tussen 0,4 en 1,2 V). Nordic vraagt VDD_GPIO > 6 ms na ENABLE en VDD. D20 (sinds rev. F een 1N4148WS) maakt C100 bij uitzetten meteen leeg.
 - **C99 47 µF op VSYS** bij FB1/de lader: buffer voor de LTE-zendpieken van de nRF9151. Naast de nRF9151 zelf was geen plek; achter FB1 zit C95 (10 µF).
-- Alle nieuwe onderdelen staan al in de stuklijst (BSS138, BAT60A, 47 µF 0805, 1M, 47k, 100 nF), behalve D18 1N4148WS (C2128, basic) en R51 330k (C270349).
+- Alle nieuwe onderdelen staan al in de stuklijst (BSS138, BAT60A, 47 µF 0805, 1M, 47k, 100 nF), behalve D18 1N4148WS (C2128, basic) en R51 330k (C142017).
 - Ze staan op F.Cu onder U9/U14 (x 121–139, y 89–95), waar eerst alleen GND-stitching-vias zaten. Tien daarvan zijn weggehaald. **Bouwhoogte** (SOT-23 ~1,1 mm, 0805 ~1,3 mm) daar nog in de behuizing controleren.
 
 ## Controle
