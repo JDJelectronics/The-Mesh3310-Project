@@ -17,24 +17,24 @@ The Nokia 3310 is famous for its durability, tactile keypad and ergonomic design
 | Function | Part |
 |---|---|
 | MCU | Nordic **nRF52840** (Cortex-M4F, Bluetooth LE, USB) |
-| LoRa | Semtech **SX1262** with a Skyworks SKY65723 front-end; on-board chip antenna in the original antenna area |
-| Cellular / GNSS | Nordic **nRF9151** (LTE-M / NB-IoT, DECT NR+, GNSS); antennas via U.FL |
+| LoRa | Semtech **SX1262** (22 dBm), 868 MHz chip antenna in the original antenna area; optional U.FL assembly variant for an external antenna |
+| Cellular / GNSS | Nordic **nRF9151** (LTE-M / NB-IoT, DECT NR+, GNSS) with a SKY65723 GNSS LNA; antennas via U.FL |
 | Bluetooth antenna | On-board 2.4 GHz chip antenna |
 | Power | TI BQ24074 charger + TPS63031 buck-boost, original 3310 battery contacts |
 | Charging / USB | Through the original bottom connector (USB data to the nRF52840) |
-| Display / input | Original PCD8544 monochrome LCD, full keypad with backlight, side power button |
+| Display / input | Original PCD8544 monochrome LCD, full keypad with backlight, side power button (short press to firmware, 7.5 s hardware power-off via TPS3420) |
 | Audio | MAX98357A amplifier for the speaker, microphone, buzzer and vibration motor contacts |
 | Storage | 2 × 16 Mbit flash (MX25R1635F), one for each Nordic chip |
 | Firmware | Built to run Meshtastic and MeshCore |
 
-## 🛠 Project Status: Rev. G layout complete 🏗️
+## 🛠 Project Status: Rev. G – first prototypes being ordered 🏗️
 - The schematic is complete and passes ERC.
 - The **4-layer PCB** (1.0 mm, so it fits the original housing; JLCPCB 4-layer stackup with 3313 prepreg) is fully routed, passes DRC and matches the schematic.
 - Board outline, mounting holes, battery contacts, display, SIM, speakers, keypad and backlight LEDs match the original Nokia 3310 housing.
 - Controlled-impedance RF lines (50 Ω) and a solid ground plane under all three radios.
 - Every assembled part has an **LCSC part number**, ready for JLCPCB assembly.
 
-Next steps: order the first prototypes, tune the RF matching networks and start firmware bring-up.
+Next steps: the first 2 assembled prototypes are being ordered at JLCPCB (waiting for the nRF9151 via global sourcing). After that: tune the RF matching networks (LoRa chip antenna first) and start firmware bring-up.
 
 | Top | Bottom (keypad side) |
 |---|---|
@@ -45,7 +45,8 @@ Next steps: order the first prototypes, tune the RF matching networks and start 
 |---|---|
 | `Kicad_Mesh3310/` | KiCad 9 project (schematic, PCB, libraries, 3D models) |
 | `Kicad_Mesh3310/datasheets/` | Datasheets of the main components |
-| `productie/` | Gerbers, drill files, pick-and-place file and BOM (JLCPCB format), plus manufacturing notes (Dutch) |
+| `productie/` | Gerbers, drill files, BOM and pick-and-place files, plus manufacturing notes (Dutch). Upload `Mesh3310-JLC-stuklijst.csv` and `Mesh3310-JLC-positie.csv` to JLCPCB. |
+| `productie/variant-UFL/` | Assembly variant with LoRa on a U.FL connector instead of the chip antenna (same gerbers) |
 | `afbeeldingen/` | Renders of the board |
 
 ## 🤝 How You Can Help
